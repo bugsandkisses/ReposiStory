@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>sunday shades</title>
+    <meta name="author" content="Lisa">
+    <meta name="keywords" content="">
+    <meta name="description" content="fishbowl animation">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style></style>
+    <link rel='stylesheet' href='styles/style.css'>
+</head>
+<body id="b">
+
+    <h1>sunday shades</h1>
+
+
+    <section id="text-box">
+        <article>
+            it is sunday again the church<br>
+            bells are ringing the lampshade<br>
+            rocking the light to a pale morning<br><br>
+
+            no i don't chase rainbows of overflowing<br>
+            glass flooding the edges of my universe<br><br>
+
+            no i don't dream anymore<br>
+            no i don't sleep anymore<br><br>
+
+            the morning withers the light<br>
+            breaks at the wall that separates<br>
+            space from space from space<br><br>
+
+            and i exist<br>
+            circling in a fishbowl
+        </article>
+    </section>
+
+
+    <button id="btn">i</button>
+    <section id="info" class="info-display">
+        <article>
+        <h2>instruction</h2>
+        <p>tap the fishbowl! (wait for the text to fade again.)</p>
+        </article>
+        <article>
+            <h2>references</h2>
+            <ul>
+                <li><a href="https://www.freecodecamp.org/news/svg-javascript-tutorial/" rel="noopener noreferrer">animated svg clock on freecodecamp.com</a></li>
+            </ul>
+        </article>
+        <article>
+            <p>2022-09-03, Lisa</p>
+        </article>
+    </section>
+
+
+    <div id="desk"></div>
+
+
+    <svg width="200" height="200" viewBox="-100 -100 200 200" id="shadow" fill="transparent" opacity="0.5">
+        <g id="fish-shadow" opacity="0.5">
+            <polygon class="fish-shadow" points="-16,12 -16,-12 0,0"/>
+            <polygon class="fish-shadow" points="-8,-8 -4,-16 8,-8"/>
+            <polygon class="fish-shadow" points="-8,8 -4,16 8,8"/>
+            <ellipse class="fish-shadow" cx="5" cy="0" rx="16" ry="10"/>
+            <circle class="fish-shadow" cx="12" cy="0" r="2"/>
+        </g>
+    </svg>
+
+
+    <svg width="200" height="200" viewBox="-100 -100 200 200" id="fishbowl">
+
+        <defs>
+            <radialGradient id="bowl-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0.3;" />
+                <stop offset="100%" style="stop-color:#5ad;stop-opacity:0.8;" />
+            </radialGradient>
+
+        </defs>
+
+        <!-- fish  -->
+        <g id="fish">
+            <polygon class="fish" points="-16,12 -16,-12 0,0"/>
+            <polygon class="fish" points="-8,-8 -4,-16 8,-8"/>
+            <polygon class="fish" points="-8,8 -4,16 8,8"/>
+            <ellipse class="fish" cx="5" cy="0" rx="16" ry="10"/>
+            <circle class="fish-eye" cx="12" cy="0" r="2"/>
+        </g>
+
+        <!-- glass with water -->
+        <ellipse class="" cx="0" cy="0" rx="100" ry="90" fill="url(#bowl-grad)" />
+
+        <!-- clock -->
+        <ellipse class="tick-minute" cx="0" y="0" rx="90" ry="80" pathLength="60" />
+        <ellipse class="tick-hour" cx="0" cy="0" rx="90" ry="80" pathLength="60" />
+        <line id="hand-hour" class="hand hand-thick" x1="0" y1="-7" x2="0" y2="-50" />
+        <line id="hand-min" class="hand hand-thick" x1="0" y1="-7" x2="0" y2="-80" />
+        <line id="hand-sec" class="hand hand-thin" x1="0" y1="0" x2="0" y2="-80" />
+
+    </svg>
+
+    <script src='scripts/fun.js'></script>
+</body>
+</html>

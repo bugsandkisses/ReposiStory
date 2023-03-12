@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+I am Ai is an interactive micro fiction. You are the protagonist Ai. When signing in to your account, you discover a terrifying truth.
+
+
+[The code for the lights game was recycled from another code of mine.]
+-->
+<html>
+    <head>
+        <title>I am Ai</title>
+        <meta name="author" content="Lisa">
+        <meta name="keywords" content="">
+        <meta name="description" content="Interactive story.">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel='stylesheet' href='styles/style.css'/>
+        <style></style>
+    </head>
+
+    <body>
+
+    <main>
+        <section id='cover'>
+            <h1>I am Ai</h1>
+            <p><i>I am Ai</i> is an interactive micro fiction. You are the protagonist Ai. When signing in to your account, you discover a terrifying truth.</p>
+            <p style='text-align: center;'><input id='btn-play' type='button' value='Play'></p>
+            <hr>
+            <p>Can you spot the Easter eggs?</p>
+            <p class='warning'>In case you are highly photo-sensitive, consider increasing the value in line 300 of the JS.</p>
+            <footer>2023-01-04</footer>
+        </section>
+
+        <section id='login'>
+            <p class='warning'>Your session expired. Please log in to your account again.</p>
+            <form>
+                <table>
+                    <tr>
+                        <td><label for='user'>User</label></td>
+                        <td><input id='user' type='text' value='Ai' maxlength='42' disabled></td>
+                    </tr>
+                    <tr>
+                        <td><label for='pw'>Password</label></td>
+                        <td><input id='pw' type='password' value='' maxlength='42' placeholder='Enter password'></td>
+                    </tr>
+                </table>
+                <p class='right'><input id='pw-check' type='checkbox'><label for='pw-check'>Show password</label></p>
+                <p class='right'><input id='btn-login' type='button' value='Log in'></p>
+            </form>
+        </section>
+
+        <section id='captcha'>
+            <article>
+                <p class='warning'>Please confirm that you are not a robot.</p>
+                <p>Switch on all lights.</p>
+                <p style='text-align: right;'><input id='btn-reset' type='button' value='Reset'></p>
+            </article>
+            <article id='picture-captcha'></article>
+            <article>
+                <p class='right'><input id='bot-check' type='checkbox'><label for='bot-check'>I am not a robot. &#x1F916;</label></p>
+            </article>
+        </section>
+
+        <section id='err'>
+            <article>Err</article>
+        </section>
+
+        <section id='inbox'>
+            <p>You are logged in.</p>
+            <p class='right'>
+                <button id='btn-inbox' class="mailbox">&#x1F4EC; Inbox
+                    <div class="notification">1</div>
+                </button>
+            </p>
+        </section>
+
+        <section id='chat'></section>
+
+        <hr id='buffer'>
+
+        <section id='ai-input'>
+            <article id='write'>
+                <textarea id='ai-txt' rows='3' disabled></textarea>
+                <input id='btn-send' type='button' value='Send'>
+            </article>
+        </section>
+    </main>
+
+    <script src='scripts/fun.js'></script>
+    </body>
+</html>
