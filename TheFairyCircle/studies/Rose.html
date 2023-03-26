@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rose</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Lisa">
+
+        <style>
+            html, body {
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            h1 {
+                text-align: center;
+            }
+            canvas {
+                /*border: solid black 2px;*/
+                display: block;
+                margin: auto;
+            }
+            table {
+                display: block;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                background-color: transparent;
+                width: 100%;
+            }
+            tr, td {
+                margin: auto;
+                font-size: 1.1em;
+                text-align: right;
+            }
+            input[type="range"] {
+                width: 70vw;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Rose</h1>
+        <canvas id='cnv'></canvas>
+        <table>
+            <tr>
+                <td>n</td><td><input id="n" type="range" min="1" max="10" value="3"></td><td id="nval"></td>
+            </tr>
+            <tr>
+                <td>d</td><td><input type="range" id="d" min="1" max="10" value="2"></td><td id="dval"></td>
+            </tr>
+            <tr>
+                <td>step</td><td><input type="range" id="step" min="0.1" max="0.5" step="0.1" value="0.1"></td><td id="stepval"></td>
+            </tr>
+        </table>
+        <script>
+            window.onload = () => {
+                const cnv = document.getElementById('cnv');
+                const ctx = cnv.getContext('2d');
+                cnv.width = cnv.height = parseInt(Math.min(window.innerHeight, window.innerWidth)*0.8);
+
+                function range(a, b, step) {
+                    /* Numbers in range [a; b] with step size */
+                    const arr = Array.from(
+                            {length: (b - a) / step + 1},
+                            (el, idx) => a + idx * step
+                        );
+                    return arr;
+                }
+                function zip(x, y) {
+                    /* Zip 2 array of same length */
+                    return x.map((el, idx) => [el, y[idx]]);
+                }
+
+                function roseXY(theta, a=1, n=2, d=7) {
+                    /* Cartesian coordinates */
+                    const k = n / d;
+                    const x = theta.slice(0), y = theta.slice(0);
+                    x.forEach((el, idx) => { x[idx] = (a*Math.cos(k*el)*Math.cos(el)) });
+                    y.forEach((el, idx) => { y[idx] = (a*Math.cos(k*el)*Math.sin(el)) });
+
+                    return zip(x, y);
+                }
+
+                function drawRose(xyArr, ctx) {
+                    /* Draw Cartesian */
+                    ctx.lineWidth = 2;
+                    ctx.strokeStyle = '#f00'; ctx.fillStyle = '#f001';
+                    ctx.moveTo(xyArr[0][0], xyArr[0][1]);
+                    ctx.beginPath();
+                    xyArr.forEach((el) => { ctx.lineTo(el[0], el[1]) });
+                    ctx.stroke(); ctx.fill();
+                    ctx.closePath();
+                }
+
+                function update() {
+                    const a = parseInt(0.9*(cnv.width/2));
+                    const n = parseFloat(document.getElementById("n").value);
+                    document.getElementById("nval").textContent = n;
+                    const d = parseFloat(document.getElementById("d").value);
+                    document.getElementById("dval").textContent = d;
+                    const step = parseFloat(document.getElementById("step").value);
+                    document.getElementById("stepval").textContent = step;
+                    let theta = range(-d*Math.PI, (d+1)*Math.PI, step);
+                    theta = roseXY(theta, a, n, d);
+                    ctx.clearRect(-cnv.width/2, -cnv.width/2, cnv.width, cnv.height);
+                    drawRose(theta, ctx);
+                }
+
+                ctx.translate(cnv.width/2, cnv.height/2);
+                update();
+                document.getElementById("n").addEventListener("change", update);
+                document.getElementById("d").addEventListener("change", update);
+                document.getElementById("step").addEventListener("change", update);
+            }
+        </script>
+    </body>
+</html>
