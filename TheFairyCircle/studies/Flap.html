@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Lisa">
+
+        <style>
+            html, body {
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            h1 {
+                text-align: center;
+            }
+            canvas {
+                border: solid red 2px;
+                display: block;
+                margin: auto;
+            }
+            table {
+                display: block;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                background-color: transparent;
+                width: 100%;
+            }
+            tr, td {
+                margin: auto;
+                font-size: 1.1em;
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flap</h1>
+        <canvas id='cnv'></canvas>
+        
+        <script>
+            window.onload = () => {
+                const cnv = document.getElementById('cnv');
+                const ctx = cnv.getContext('2d');
+                cnv.width = cnv.height = parseInt(Math.min(window.innerHeight, window.innerWidth)*0.8);
+                
+                /* test param */
+                
+                // size
+                const a0 = (cnv.width*0.06).toFixed();
+                const a1 = (cnv.width*0.05).toFixed();
+                // orientation
+                const degMax = 10;
+                let degType = 1;
+                // petals
+                const n = 2;
+                const d = 1;
+                const step = 0.2;
+                // animation
+                const deltaTime = 500;
+                let paused = 0;
+                let lastUpdate = 0;
+                let id;
+                let a = a0, deg = degType;
+                let x = y = cnv.width/2;
+                let dxy = 1;
+                let hinc = winc = dxy;
+                let fCount = 0;
+                
+                let lastFlap;
+                let flapDelta = 100;
+                let lastTurn;
+                let turnDelta = 1500;
+                let thetaDir = Math.PI/2;
+
+                function range(a, b, step) {
+                    /* Numbers in range [a; b] with step size */
+                    const arr = Array.from(
+                            {length: (b - a) / step + 1},
+                            (el, idx) => a + idx * step
+                        );
+                    return arr;
+                }
+                function zip(x, y) {
+                    /* Zip 2 arrays of same length */
+                    return x.map((el, idx) => [el, y[idx]]);
+                }
+                function polarToCartesian(r, theta) {
+                    return [r*Math.cos(theta), r*Math.sin(theta)];
+                }
+
+                function roseXY(theta, a=1, n=2, d=7) {
+                    /* Cartesian coordinates */
+                    const k = n / d;
+                    const x = theta.slice(0), y = theta.slice(0);
+                    x.forEach((el, idx) => { x[idx] = (a*Math.cos(k*el)*Math.cos(el)) });
+                    y.forEach((el, idx) => { y[idx] = (a*Math.cos(k*el)*Math.sin(el)) });
+                    return zip(x, y);
+                }
+
+                function drawRose(xyArr, x, y, ctx) {
+                    /* Draw Cartesian */
+                    ctx.lineWidth = 1;
+                    ctx.strokeStyle = '#f00'; ctx.fillStyle = '#f001';
+                    ctx.moveTo(xyArr[0][0]+x, xyArr[0][1]+y);
+                    ctx.beginPath();
+                    xyArr.forEach((el) => { ctx.lineTo(el[0]+x, el[1]+y) });
+                    ctx.stroke(); ctx.fill();
+                    ctx.closePath();
+                }
+
+                function update(nowUpdate) {
+                    
+                    // change?
+                    if (!lastFlap || nowUpdate - lastFlap >= flapDelta) {
+                        lastFlap = nowUpdate;
+                        a = a == a0? a1: a0;
+                        degType = 1//degType == -1? 1: -1;
+                        deg = degType * degMax;
+                    }
+                    if (!lastTurn || nowUpdate - lastTurn >= turnDelta) {
+                        lastTurn = nowUpdate;
+                    }
+                    
+                    if (!lastUpdate || nowUpdate - lastUpdate >= 0.2*deltaTime) {
+
+                        if (x < a || x > cnv.width-a) {
+                            thetaDir += degMax * Math.PI / 180;
+                        }
+                        x += polarToCartesian(1, thetaDir)[0];
+                        
+                        if (y < a || y > cnv.width-a) {
+                            thetaDir += degMax * Math.PI / 180;
+                        }
+                        y += polarToCartesian(1, thetaDir)[1];
+                    }
+                    
+                    
+                    if (!lastUpdate || nowUpdate - lastUpdate >= deltaTime) {
+                        lastUpdate = nowUpdate;
+                    }
+                    
+                    
+                    
+                    let theta = range(-0*Math.PI, a/2*Math.PI, step);
+                    theta = roseXY(theta, a, n, d);
+                    
+                    ctx.clearRect(0, 0, cnv.width, cnv.height);
+                    //ctx.save();
+                    //ctx.translate(x, y);
+                    //ctx.rotate(deg * Math.PI / 180); // rotate ctx
+                    drawRose(theta, x, y, ctx);
+                    //ctx.rotate(-deg * Math.PI / 180); // reset rotation
+                    //ctx.restore();
+                    id = requestAnimationFrame(update);
+                }
+
+                //ctx.translate(cnv.width/2, cnv.height/2);
+                id = requestAnimationFrame(update);
+            }
+        </script>
+    </body>
+</html>

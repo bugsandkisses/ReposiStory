@@ -48,10 +48,16 @@
         <canvas id='cnv'></canvas>
         <table>
             <tr>
-                <td>n</td><td><input id="n" type="range" min="1" max="10" value="3"></td><td id="nval"></td>
+                <td>a</td><td><input id="a" type="range" min="10" max="400" value="100" step="10"></td><td id="aval"></td>
+            </tr>
+            <tr>
+                <td>n</td><td><input id="n" type="range" min="0" max="10" value="3" step="0.1"></td><td id="nval"></td>
             </tr>
             <tr>
                 <td>d</td><td><input type="range" id="d" min="1" max="10" value="2"></td><td id="dval"></td>
+            </tr>
+            <tr>
+                <td>deg</td><td><input id="deg" type="range" min="0" max="355" value="0" step="5"></td><td id="degval"></td>
             </tr>
             <tr>
                 <td>step</td><td><input type="range" id="step" min="0.1" max="0.5" step="0.1" value="0.1"></td><td id="stepval"></td>
@@ -72,7 +78,7 @@
                     return arr;
                 }
                 function zip(x, y) {
-                    /* Zip 2 array of same length */
+                    /* Zip 2 arrays of same length */
                     return x.map((el, idx) => [el, y[idx]]);
                 }
 
@@ -82,7 +88,6 @@
                     const x = theta.slice(0), y = theta.slice(0);
                     x.forEach((el, idx) => { x[idx] = (a*Math.cos(k*el)*Math.cos(el)) });
                     y.forEach((el, idx) => { y[idx] = (a*Math.cos(k*el)*Math.sin(el)) });
-
                     return zip(x, y);
                 }
 
@@ -98,23 +103,35 @@
                 }
 
                 function update() {
-                    const a = parseInt(0.9*(cnv.width/2));
+                    //const a = parseInt(0.9*(cnv.width/2));
+                    const a = parseFloat(document.getElementById("a").value);
+                    document.getElementById("aval").textContent = a;
                     const n = parseFloat(document.getElementById("n").value);
                     document.getElementById("nval").textContent = n;
                     const d = parseFloat(document.getElementById("d").value);
                     document.getElementById("dval").textContent = d;
+                    const deg = parseInt(document.getElementById("deg").value);
+                    document.getElementById("degval").textContent = deg;
                     const step = parseFloat(document.getElementById("step").value);
                     document.getElementById("stepval").textContent = step;
-                    let theta = range(-d*Math.PI, (d+1)*Math.PI, step);
+                    //let theta = range(-d*Math.PI, (d+1)*Math.PI, step);
+                    let theta = range(-a*Math.PI, 4*Math.PI, step);
                     theta = roseXY(theta, a, n, d);
                     ctx.clearRect(-cnv.width/2, -cnv.width/2, cnv.width, cnv.height);
+                    ctx.rotate(deg * Math.PI / 180); // rotate ctx
                     drawRose(theta, ctx);
+                    ctx.rotate(-deg * Math.PI / 180); // reset rotation
                 }
 
                 ctx.translate(cnv.width/2, cnv.height/2);
+                document.getElementById("a").max = parseInt(cnv.width/2*0.95);
+                document.getElementById("a").value = 50;
                 update();
-                document.getElementById("n").addEventListener("change", update);
+                
+                document.getElementById("a").addEventListener("input", update);
+                document.getElementById("n").addEventListener("input", update);
                 document.getElementById("d").addEventListener("change", update);
+                document.getElementById("deg").addEventListener("change", update);
                 document.getElementById("step").addEventListener("change", update);
             }
         </script>
