@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stu says boo!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Lisa">
+        <meta name="description" content="Console-based ascii art comic.">
+
+        <style>
+            :root {
+                --bgCol: #333;
+                --fCol: #fff;
+                --errCol: yellow;
+            }
+            html, body {
+                width: 100vw;
+                margin: auto;;
+                line-height: 1.5em;
+                background-color: var(--bgCol);
+                color: var(--fCol);
+            }
+            body {
+                padding: 1em;
+            }
+            label, summary {
+                color: var(--errCol);
+            }
+            * {
+                box-sizing: border-box;
+                font-family: monospace, monospace;
+            }
+            h1 {
+                text-align: center;
+            }
+            section {
+                margin-bottom: 2em;
+            }
+            textarea {
+                width: 100%;
+                resize: vertical;
+                height: 5em;
+                display: none;
+                background-color: var(--bgCol);
+                color: var(--fCol);
+                line-height: 1em;
+                text-align: center;
+            }
+            #output {
+                height: 35em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Stu says boo!</h1>
+        <details>
+            <summary>Info</summary>
+            <p><em>Stu says boo!</em> is a console-based ascii-art comic fueled by my nightmare. The story is about a mad killer rabbit and his author. As the story is displayed in a console/ "console", read the panels from "last" to "first".</p>
+        </details>
+        <p>
+            <label for='chp'>Chapter: </label>
+            <select id='chp'>
+                <option>Choose a story.</option>
+            </select>
+            <br>
+            <label for='onpage'>On-page: </label><input type="checkbox" id='onpage' checked>
+        </p>
+        <section id='input'>
+            <label>LouScript:</label><br>
+            <textarea class='ljson' data-title='Who is Stu?' readonly>{"META":{"TITLE":"Who is Stu?","AUTHOR":"Lou J. Son","VERSION":"2023-05-10","SUMMARY":"A console-based ascii art comment about a killer bunny. The author Lou J. Son promotes her new horror comic but suddenly her main character comes alive."},"SCENE":{"#00cover":[["TEXTBOX","TITLE: Stu says boo!"],["ASCII","               /\\ /\\        \n               \\/_\\/        \n     Stu says b(o.O)!zz     \n               / \" \\/       \n               ()~()        ",{"zz":"🫀"}],["SPEECH",[["author","Lou J. Son"]]]],"#00dedication":[["TEXTBOX","Dedication"],["SPEECH",[["dedication","To D.S. who made me fall in love with ascii art and monster rabbits."],["dedication","To R.W. who introduced me to Stu."],["dedication","To N./A. who likes horror."]]]],"#01":[["TEXTBOX","Friday night, 13th. A queue at the mall."],["ASCII","  o     o         o  o      \n /|\\ o /|\\ o   o /|\\/|\\     \n / \\/|\\/ \\/|\\ /|\\/ \\/ \\   o \n    / \\   / \\ / \\      o /|\\\n                      /|\\/ \\\n     o        o       / \\ o \n    /|\\ o  o /|\\ o  o  o /|\\\n  o / \\/|\\/|\\/ \\/|\\/|\\/|\\/ \\\n /|\\   / \\/ \\   / \\/ \\/ \\   \n / \\ o             o        \n    /|\\  o  o   o /|\\       \n    / \\ /|\\/|\\ /|\\/ \\ o  o  \n        / \\/ \\ / \\   /|\\/|\\ \n                     / \\/ \\ "]],"#02":[["ASCII","    / \\ /|\\/|\\ /|\\/ \\ o  o  \n        / \\/ \\ / \\   /|\\/|\\ \n                     / \\/ \\ "],["SPEECH",[["teen1","Look at that queue! Get a life, guys!"],["teen2","Hehe, yeah get a --"]]],["ASCII","                888         \n    vvv        (   )        \n   (~_~)      )(o_o)(       \n    / \\         / \\         \n    | |         | |         "]],"#03":[["SPEECH",[["teen2","OMG. It's _her_!!!"],["teen1","It's who? Like, a popstar? An actress? YouTube? Twitch?"],["teen2","Lou J. Son! She's my hero!"],["teen1","Lou who? Never heard of her."]]],["ASCII","                888         \n    vvv        (   )        \n   (?_?)      )(@_@)(       \n    / \\         / \\         \n    | |         | |         "]],"#04":[["SPEECH",[["teen2","_Lou Son_! The author of the 'Stu says boo!' comics!"]]],["ASCII"," +       *         *   +    \n     +      888             \n  *        (   )  +     *   \n      *   )(^o^)(           \n            / \\        +    \n  *    +    | |     *       "]],"#05":[["SPEECH",[["teen1","You mean the one who writes those stupid wannabe horror series about a rabbit?"],["teen2","Lou!"],["teen1","And _Stu_ is the rabbit? And the plot is always like, he kills like everybody?"],["teen2","Ahhh!"]]],["ASCII","                888         \n    vvv        (   )        \n   (o_P)      )(^o^)(       \n    / \\         / \\         \n    | |         | |         "]],"#06":[["SPEECH",[["teen1","Oh, crap. Like, what a crappy crap..."],["teen2","I **must** get an autograph!"],["teen1","Whatever... Wait, what??? But that queue! Like, come on!!!"]]],["ASCII","                888         \n    vvv        (   )        \n   (~_~)      )(^o^)(       \n    / \\         / \\         \n    | |         | |         "]],"#07":[["TEXTBOX","At the mall, the famous comic artist Lou J. Son promotes her new book."],["SPEECH",[["Lou","After the success of the first comics, I was thinking: _How can I ever keep up with that?_"]]],["ASCII","          _______________   \n         |               |  \n         | Stu says boo! |  \n         |               |  \n         |     /\\ /\\     |  \n         |  xx \\/_\\/zz   |  \n   (8)   |    \\(o.O)/    |  \n  (888)  |     / \" \\     |  \n 8(o_o)8 |     ()~()     |  \n   / \\_  |_______________|  \n   | |    |             |   ",{"xx":"🪚","zz":"🫀"}]],"#08":[["SPEECH",[["Lou","It was an awful lot of work. But now I'm back with a new book and I proudly --"]]],["ASCII","             (8)            \n            (888)           \n           8(o_o)8          \n             / \\_           \n             | |            "]],"#09":[["TEXTBOX","All of a sudden, all the lights go out."],["ASCII","                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            "]],"#10":[["TEXTBOX","A pair of blazing eyes flashes up in the dark."],["ASCII","                            \n                            \n                            \n                            \n                            \n              o O           \n                            \n                            \n                            \n                            "]],"#11":[["TEXTBOX","The emergency power generator jumps on and someone screams out:"],["SPEECH",[["so","It's Stu!"]]],["ASCII","             /\\ /\\          \n             \\/_\\/          \n             (o.O)          \n             / \" \\          \n             ()~()          "]],"#12":[["SPEECH",[["Stu","Boo!"]]],["ASCII","             /\\ /\\          \n             \\/_\\/          \n             (o.O)          \n             / \" \\          \n             ()~()          "]],"#13":[["TEXTBOX","Panic breaks loose. All of a sudden, Stu holds a saw in his paw."],["ASCII","       \\o/                  \n \\o/    |              \\o/  \n  |    / \\   /\\ /\\      |   \n / \\\\o/   xx \\/_\\/     / \\  \n     |      \\(o.O)/         \n    / \\ \\o/  / \" \\  \\o/  \\o/\n         |   ()~()   |    | \n  \\o/   / \\         / \\  / \\\n   |                        \n  / \\ \\o/           \\o/  \\o/\n       |             |    | \n      / \\           / \\  / \\",{"xx":"🪚"}],["SPEECH",[["so1","Aaaahh!"],["so2","He's come to kill us all!"],["so3","Help!"]]]],"#14":[["TEXTBOX","Running away but mostly for the sake of the plot, someone falls right onto Stu's saw blade."],["ASCII","        _\\o                 \n         /   /\\ /\\          \n        /\\xx \\/_\\/          \n            \\(o.O)/         \n             / \" \\          \n             ()~()          ",{"xx":"🪚"}]],"#15":[["TEXTBOX","As the saw pierces the heart, blood splashes all over the place."],["ASCII","                  #######   \n                ##########  \n              ############# \n              ############# \n                ##########  \n                  #######   \n    ##        ##            \n   ####      #####          \n  ######    ########        \n ########   ##########      \n ########   ###########     \n##########   ###########    \n##########    ##########    \n##########     ########     \n ########       ######      \n  ######                    "]],"#16":[["TEXTBOX","Eventually, there is dead silence."],["SPEECH",[["Stu","Boo?"]]],["ASCII","                            \n            /\\ /\\           \n         xx \\/_\\/ zz        \n           \\(o.O)/          \n            / \" \\           \n            ()~()           ",{"xx":"🪚","zz":"🫀"}]],"#17":[["TEXTBOX","Everyone is dead or gone."],["SPEECH",[["Stu","Hello?"]]],["ASCII","                            \n            /\\ /\\           \n         xx \\/_\\/ zz        \n           \\(o.O)/          \n            / \" \\           \n            ()~()           ",{"xx":"🪚","zz":"🫀"}]],"#18":[["TEXTBOX","Stu is left behind, alone with a heart in his paw."],["SPEECH",[["Stu","Friends? Anybody?"]]],["ASCII","                            \n            /\\ /\\           \n         xx \\/_\\/ zz        \n           \\(o.O)/          \n            / \" \\           \n            ()~()           ",{"xx":"🪚","zz":"🫀"}]]}}</textarea>
+        </section>
+        <section>
+            <label>Console:</label><br>
+            <textarea readonly id='output'></textarea>
+        </section>
+
+        <script>
+            
+            function chunkText(text, maxlength) {
+                /* Split string into chunk of max. length
+                */
+                const chunkRegex = new RegExp('.{1,' + maxlength + '}(?:\\s|$)', 'g');
+                text = text.match(chunkRegex);
+                text = text.map(s => s.trim());
+                return text;
+            }
+            function hangingIndent(textArr, pre='> ') {
+                const preLen = pre.length;
+                textArr.forEach((val, idx) => {
+                    if (idx == 0) textArr[idx] = `${pre}${val}`;
+                    else textArr[idx] = `${' '.repeat(preLen)}${val}`;
+                });
+                return textArr;
+            }
+            function alignStrings(textArr, lineWidth) {
+                textArr.forEach((val, idx) => {
+                    if (val.length < lineWidth) textArr[idx] = `${val}${' '.repeat(lineWidth - val.length)}`;
+                })
+                return textArr;
+            }
+            
+            function prepareScene(scene, defaultWidth=28) {
+            
+                // find max. col ascii image to determine scene width
+                let w = [];
+                for (const section of scene) {
+                    if (section[0] == 'ASCII') {
+                        const nrows = section[1].split('\n').length;
+                        const ncols = (section[1].length - nrows + 1) / nrows;
+                        w.push(ncols);
+                    }
+                }
+                w = w.length > 0 ? Math.max(...w) : defaultWidth;
+                const emptySpace = ' '.repeat(w);
+                
+                // create section arrays
+                const sceneArr = [];
+                for (let sidx=0; sidx < scene.length; sidx++) {
+                    const [sType, sContent, sOther] = scene[sidx];
+                    switch(sType) {
+                        case 'TEXTBOX':
+                            const chunks = chunkText(sContent, w);
+                            sceneArr.push([sType, alignStrings(chunks, w)]);
+                            break;
+                        case 'ASCII':
+                            //console.log(sContent, sOther)
+                            const nrows = sContent.split('\n').length;
+                            const ncols = (sContent.length - nrows + 1) / nrows;
+                            let ascii = sContent.split('\n');
+                            if (ncols != w)  {
+                                ascii = alignStrings(chunkText(ascii, w), w);
+                            }
+                            if (typeof sOther !== 'undefined') {
+                                for (const key in sOther) {
+                                    ascii.forEach((val, idx) => {
+                                        ascii[idx] = val.replaceAll(key, sOther[key]);
+                                    });
+                                }
+                            }
+                            if (sidx != 0) ascii.unshift(emptySpace);
+                            sceneArr.push([sType, ascii]);
+                            break;
+                        case 'SPEECH':
+                            // determine number of speakers
+                            const names = sContent.map(val => val[0]);
+                            const n = new Set(names).size;
+                            const indent = 4;
+                            let isNotFirst = false;
+                            for (const sp of sContent) {
+                                let [name, text] = sp; 
+                                const nameIdx = names.indexOf(name);
+                                const ind = (w-n*indent) < 7 ? 7: (w-n*indent);
+                                text = chunkText(text, ind);
+                                text = hangingIndent(text, `${' '.repeat(nameIdx*indent)}> `);
+                                text = alignStrings(text, w);
+                                if (isNotFirst || (sidx>=1 && scene.length > 1)) text.unshift(emptySpace);
+                                sceneArr.push([sType, text]);
+                                isNotFirst = true;
+                            }
+                            break;
+                    }
+                }
+                return {"width": w, "section": sceneArr};
+            }
+            
+            function makePanel(scene) {
+                // preprare scene
+                const sceneObj = prepareScene(scene);
+                const w = sceneObj.width;
+                const section = sceneObj.section;
+                
+                // assemble panel
+                let panel = '';
+                for (let idx = 0; idx < section.length; idx++) {
+                    let [sType, sContent] = section[idx];
+                    sContent.forEach((val, idx) => {
+                        sContent[idx] = `| ${val} |`;
+                    });
+                    let topBorder = '', bottomBorder = '';
+                    
+                    // top border?
+                    if (idx == 0 || sType == 'TEXTBOX') {
+                        // top-border
+                        topBorder = '_'.repeat(w+4) + '\n' + `|${' '.repeat(w+2)}|`;
+                        panel += topBorder + '\n';
+                    }
+                    // content
+                    panel += sContent.join('\n');
+                    // bottom border?
+                    if (idx == section.length-1 || sType == 'TEXTBOX') {
+                        bottomBorder = '\n'+`|${'_'.repeat(w+2)}|`;
+                        panel += bottomBorder ;
+                    }
+                    panel += '\n';
+                }
+                return panel;
+            }
+            
+            function main() {
+                const $ = document;
+                const chpSelect = $.getElementById('chp');
+                const ljson = $.getElementsByClassName('ljson');
+                const output = $.getElementById('output');
+                const onpage = $.getElementById('onpage');
+                onpage.checked = true;
+                
+                // find stories
+                for (const ch of ljson) {
+                    const opt = $.createElement('option');
+                    opt.textContent = ch.dataset.title;
+                    opt.value = ch.dataset.title;
+                    chpSelect.appendChild(opt);
+                }
+                
+                // select story
+                chpSelect.addEventListener('input', function(ev) {
+                    const title = ev.target.value;
+                    output.value = '';
+                    for (const story of ljson) {
+                        if (story.dataset.title == title) {
+                            story.style.display = 'block';
+                            output.style.display = 'block';
+                            let scenes = JSON.parse(story.value).SCENE;
+                            let panels = [];
+                            for (const s in scenes) {
+                                let scene = scenes[s];
+                                panels.unshift(makePanel(scene)); // reverse order
+                            }
+                            for (const p of panels) {
+                                if (!onpage.checked) {
+                                    console.log(p);
+                                }
+                                else {
+                                    output.value += p + "\n";
+                                }
+                            }
+                            if (onpage.checked) {
+                                output.scrollTop = output.scrollHeight;
+                                window.scrollTo(0, $.body.scrollHeight);
+                            }
+                            if (!onpage.checked) output.value = 'Console';
+                        }
+                        else {
+                            story.style.display = 'none';
+                        }
+                    }
+                })
+                
+            }
+            
+            window.onload = main();
+        </script>
+    </body>
+</html>

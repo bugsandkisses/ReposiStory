@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stringify art</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Lisa">
+
+        <style>
+            html, body {
+                width: 100vw;
+                margin: auto;;
+                line-height: 1.5em;
+            }
+            body {
+                padding: 1em;
+            }
+            * {
+                box-sizing: border-box;
+                font-family: "Courier New", monospace;
+            }
+            h1 {
+                text-align: center;
+            }
+            input[type="number"] {
+                width: 4em;
+            }
+            textarea {
+                display: inline-block;
+                text-align: justify;
+                font-size: 1em;
+                word-break: break-all;
+                resize: none;
+                overflow-y: scroll;
+                /*scrollbar-gutter: stable both-edges;*/
+                padding-right: 1em;
+                scrollbar-width: thin;
+                line-height: 1em;
+                overflow-wrap: break-word;
+            }
+            label {
+                font-weight: bold;
+            }
+            #txtjson {
+                width: 95%;
+                height: 4em;
+            }
+            .hint {
+                font-size: 0.8em;
+                line-height: 0.8em;
+                margin-top: 0.8em;
+                display: inline-block;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Stringify art</h1>
+        <p>
+            <label for="txtrows">Rows:</label> <input id="txtrows" type="number" value="30" min="1"><br>
+            <label for="txtcols">Cols:</label> <input id="txtcols" type="number" value="30" min="1"><br>
+            <button id="loubtn">Lou</button>
+        </p>
+        <p>
+            <label for="txtraw">Art:</label><br>
+            <textarea id="txtraw"></textarea><br>
+            <button id="clearbtn">Clear</button><br>
+            <span class="hint">Linebreaks will be removed from the output.</span><br>
+        </p>
+        <p>
+            <label for="txtjson">Stringified:</label><br>
+            <textarea readonly id="txtjson"></textarea><br>
+            <button id="strbtn">Stringify</button>
+        </p>
+
+
+        <script>
+            function main() {
+                const $ = document;
+                const defaults = {"cols": 7,
+                                  "rows": 5,
+                                  "lou": "  (8)  \n (888) \n8(o_o)8\n _/ \\_ \n  | |  " // "  (8)   (888) 8(o_o)8\n _/ \\_   | |  "
+                                  };
+
+                // events
+                $.getElementById("loubtn").addEventListener("click", function() {
+                    $.getElementById("txtcols").value = defaults.cols;
+                    $.getElementById("txtrows").value = defaults.rows;
+                    $.getElementById("txtraw").cols = defaults.cols;
+                    $.getElementById("txtraw").rows = defaults.rows;
+                    $.getElementById("txtraw").maxLength = defaults.rows * defaults.cols + defaults.cols;
+                    $.getElementById("txtraw").value = defaults.lou //.replace(/\s/g, '\u00B7'); // replace whitespace by middledot
+                    $.getElementById("txtjson").value = "Hi, I'm Lou!";
+                });
+                $.getElementById("loubtn").click(); // set defaults (Lou)
+                $.getElementById("clearbtn").addEventListener("click", function() {
+                    $.getElementById("txtraw").value = "";
+                    $.getElementById("txtjson").value = "";
+                });
+                $.getElementById("txtcols").addEventListener("change", function(ev) {
+                    // update number of columns
+                    const val = ev.target.value;
+                    const re = /^[0-9]+$/;
+                    if (!re.test(val) || parseInt(val) < 1) ev.target.value = defaults.cols;
+                    $.getElementById("txtraw").cols = ev.target.value;
+                    let r = parseInt($.getElementById("txtraw").rows), c = parseInt($.getElementById("txtraw").cols);
+                    $.getElementById("txtraw").maxLength = parseInt(ev.target.value)*r + parseInt($.getElementById("txtraw").cols); // allow linebreak for input (layout)
+                    //$.getElementById("txtraw").value = ' '.repeat(parseInt($.getElementById("txtraw").rows*parseInt($.getElementById("txtraw").cols))));
+                });
+                $.getElementById("txtrows").addEventListener("change", function(ev) {
+                    // update number of rows
+                    const val = ev.target.value;
+                    const re = /^[0-9]+$/;
+                    if (!re.test(val) || parseInt(val) < 1) ev.target.value = defaults.rows;
+                    $.getElementById("txtraw").rows = ev.target.value;
+                    $.getElementById("txtraw").maxLength = parseInt(ev.target.value)*parseInt($.getElementById("txtraw").cols) + parseInt($.getElementById("txtraw").cols); // allow linebreak for input (layout)
+                    //$.getElementById("txtraw").value = ' '.repeat(parseInt($.getElementById("txtraw").rows*parseInt($.getElementById("txtraw").cols));
+                });
+                $.getElementById("txtraw").addEventListener("input", function(ev) {
+                    $.getElementById("txtjson").value = "";
+                    //ev.target.value = ev.target.value.replace(/\s/g, '\u00b7');
+                });
+                $.getElementById("strbtn").addEventListener("click", function(ev) {
+                    // generate json string
+                    let txt = $.getElementById("txtraw").value // .replace('\u00b7', ' ');
+                    // remove all input linebreaks etc.
+                    txt = txt.replace(/(?:\r\n|\r|\n)/g, '');
+                    // length = cols * rows ?
+                    const validLength = ($.getElementById("txtraw").cols * $.getElementById("txtraw").rows);
+                    if (txt.length == validLength) {
+                        // split text after each n cols
+                        const re = new RegExp('.{1,' + $.getElementById("txtraw").cols + '}', 'g');
+                        txt = txt.match(re);
+                        // join and stringify
+                        console.log(txt.join("\n"));
+                        txt = JSON.stringify(txt.join("\n"));
+                        //console.log(txt);
+                        $.getElementById("txtjson").value = txt;
+                    }
+                    else {
+                        const err = `Invalid number of characters: ${validLength} expected, ${txt.length} found.`;
+                        $.getElementById("txtjson").value = err;
+                        console.error(JSON.stringify(txt));
+                        throw new Error(err);
+                    }
+                })
+            }
+            window.onload = main();
+        </script>
+    </body>
+</html>
