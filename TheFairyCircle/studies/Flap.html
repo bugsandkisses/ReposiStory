@@ -76,7 +76,7 @@
                 let lastFlap;
                 let flapDelta = 100;
                 let lastTurn;
-                let turnDelta = 1500;
+                let turnDelta = 3000;
                 let thetaDir = Math.PI/2;
 
                 function range(a, b, step) {
@@ -94,6 +94,13 @@
                 function polarToCartesian(r, theta) {
                     return [r*Math.cos(theta), r*Math.sin(theta)];
                 }
+                function rotateAround(x, y, ctrx, ctry, rad) {
+                    const sin = Math.sin(rad);
+                    const cos = Math.cos(rad);
+                    let xx = (cos * x) + (sin * y) + ctrx;
+                    let yy = (cos * y) - (sin * x) + ctry;
+                    return [xx, yy];
+                }
 
                 function roseXY(theta, a=1, n=2, d=7) {
                     /* Cartesian coordinates */
@@ -104,13 +111,22 @@
                     return zip(x, y);
                 }
 
-                function drawRose(xyArr, x, y, ctx) {
+                function drawRose(xyArr, x, y, rad, ctx) {
                     /* Draw Cartesian */
                     ctx.lineWidth = 1;
                     ctx.strokeStyle = '#f00'; ctx.fillStyle = '#f001';
-                    ctx.moveTo(xyArr[0][0]+x, xyArr[0][1]+y);
+                    //ctx.moveTo(xyArr[0][0]+x, xyArr[0][1]+y);
                     ctx.beginPath();
-                    xyArr.forEach((el) => { ctx.lineTo(el[0]+x, el[1]+y) });
+                    for (let idx = 0; idx < xyArr.length; idx++) {
+                        let [xx, yy] = xyArr[idx];
+                        //xx += x; yy += y;
+                        [xx, yy] = rotateAround(xx, yy, x, y, rad);
+                        if (idx == 0) {
+                            ctx.moveTo(xx, yy);
+                        }
+                        ctx.lineTo(xx, yy);
+                    }
+                    //xyArr.forEach((el) => { ctx.lineTo(el[0]+x, el[1]+y) });
                     ctx.stroke(); ctx.fill();
                     ctx.closePath();
                 }
@@ -126,16 +142,19 @@
                     }
                     if (!lastTurn || nowUpdate - lastTurn >= turnDelta) {
                         lastTurn = nowUpdate;
+                        let turnDeg = Math.floor(Math.random() * (90 - 0 + 1) + 0);
+                        if (Math.random() < 0.5) turnDeg *= -1;
+                        thetaDir += turnDeg * Math.PI / 180;
                     }
                     
                     if (!lastUpdate || nowUpdate - lastUpdate >= 0.2*deltaTime) {
 
-                        if (x < a || x > cnv.width-a) {
+                        if (x < a0 || x > cnv.width-a0) {
                             thetaDir += degMax * Math.PI / 180;
                         }
                         x += polarToCartesian(1, thetaDir)[0];
                         
-                        if (y < a || y > cnv.width-a) {
+                        if (y < a0 || y > cnv.width-a0) {
                             thetaDir += degMax * Math.PI / 180;
                         }
                         y += polarToCartesian(1, thetaDir)[1];
@@ -155,7 +174,7 @@
                     //ctx.save();
                     //ctx.translate(x, y);
                     //ctx.rotate(deg * Math.PI / 180); // rotate ctx
-                    drawRose(theta, x, y, ctx);
+                    drawRose(theta, x, y, thetaDir-45*Math.PI/180, ctx);
                     //ctx.rotate(-deg * Math.PI / 180); // reset rotation
                     //ctx.restore();
                     id = requestAnimationFrame(update);
