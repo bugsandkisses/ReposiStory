@@ -158,6 +158,24 @@
                                 isNotFirst = true;
                             }
                             break;
+                        case 'THOUGHT':
+                            // determine number of speakers
+                            const names = sContent.map(val => val[0]);
+                            const n = new Set(names).size;
+                            const indent = 4;
+                            let isNotFirst = false;
+                            for (const sp of sContent) {
+                                let [name, text] = sp; 
+                                const nameIdx = names.indexOf(name);
+                                const ind = (w-n*indent) < 7 ? 7: (w-n*indent);
+                                text = chunkText(text, ind);
+                                text = hangingIndent(text, `${' '.repeat(nameIdx*indent)}* `);
+                                text = alignStrings(text, w);
+                                if (isNotFirst || (sidx>=1 && scene.length > 1)) text.unshift(emptySpace);
+                                sceneArr.push([sType, text]);
+                                isNotFirst = true;
+                            }
+                            break;
                     }
                 }
                 return {"width": w, "section": sceneArr};

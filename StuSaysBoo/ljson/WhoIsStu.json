@@ -2,14 +2,14 @@
     "META": {
         "TITLE": "Who is Stu?",
         "AUTHOR": "Lou J. Son",
-        "VERSION": "2023-05-10",
+        "VERSION": "2023-05-12",
         "SUMMARY": "A console-based ascii art comment about a killer bunny. The author Lou J. Son promotes her new horror comic but suddenly her main character comes alive."
     },
     "SCENE": {
         "#00cover": [
             [
                 "TEXTBOX",
-                "TITLE: Stu says boo!"
+                "Who is Stu?"
             ],
             [
                 "ASCII",
