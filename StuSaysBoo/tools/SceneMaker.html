@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scene Maker</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Lisa">
+
+        <style>
+            html, body {
+                width: 100vw;
+                margin: auto;;
+                line-height: 1.5em;
+            }
+            body {
+                padding: 1em;
+            }
+            * {
+                box-sizing: border-box;
+                font-family: "Courier New", "Courier New", monospace, monospace;
+            }
+            h1 {
+                text-align: center;
+            }
+            input[type="number"] {
+                width: 4em;
+            }
+
+            #scene > div {
+                margin: 1rem auto;
+            }
+            textarea {
+                display: block;
+                text-align: justify;
+                font-size: 1em;
+                resize: vertical;
+                overflow-y: scroll;
+                padding-right: 1em;
+                scrollbar-width: thin;
+                line-height: 1em;
+                overflow-wrap: break-word;
+            }
+            .field {
+                background-color: lightgrey;
+            }
+            .TEXTBOX {
+                background-color: lightgreen;
+            }
+            .ASCII {
+                background-color: yellow;
+            }
+            .SPEECH {
+                background-color: lightblue;
+            }
+            .THOUGHT {
+                background-color: orange;
+            }
+            #ljson {
+                width: 80%;
+            }
+
+            label {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Scene Maker</h1>
+        <section>
+            <h2>Scene</h2>
+            <article id='globals'>
+                <p><label for='col'>Columns: </label><input type='number' id='col'></p>
+                <p><label for='add'>New Field: </label><input id='add' type='button' value='Add'></p>
+            </article>
+            <article id="scene"></article>
+        </section>
+
+        <section>
+            <h2>LouScript</h2>
+            <textarea id='ljson'></textarea>
+            <input type='button' id='ljsonbtn' value='ljson'>
+        </section>
+
+
+        <script>
+            function updateCol() {
+                // apply change of column width
+                const allFields = document.querySelectorAll('textarea.field');
+                for (const obj of allFields) {
+                    obj.cols = document.querySelector('#col').value;
+                }
+            }
+            function onChangeCol() {
+                // change column width of scenes
+                const re = /^[0-9]+$/;
+                let val = document.querySelector('#col').value;
+                if (!re.test(val) || parseInt(val) < 1) {
+                    val = 30;
+                    document.querySelector('#col').value = val;
+                }
+                updateCol();
+            }
+            function onTypeChange(ev) {
+                // change field type
+                ev.target.classList = ev.target.value;
+            }
+
+            function makeRemoveBtn() {
+                // make a remove button
+                const btn = document.createElement('input');
+                btn.type = 'button';
+                btn.value = 'Remove';
+                btn.addEventListener('click', function(ev) {
+                    ev.target.parentElement.remove();
+                });
+                return btn;
+            }
+            function makeMoveBtn(direction=-1) {
+                // make a move field button
+                const btn = document.createElement('input');
+                btn.type = 'button';
+                btn.value = direction;
+                switch (direction) {
+                    case -1:
+                        btn.addEventListener('click', function(ev) {
+                            const scene = document.querySelector('#scene');
+                            const fld = ev.target.parentElement;
+                            if (fld !== scene.children[0]) {
+                                for (let idx = 1; scene.children.length; idx++) {
+                                    if (fld == scene.children[idx]){
+                                        fld.parentNode.insertBefore(fld, scene.children[idx+direction]);
+                                        break;
+                                    }
+                                }
+                            }
+                        });
+                        break;
+                    case 1:
+                        btn.addEventListener('click', function(ev) {
+                            const scene = document.querySelector('#scene');
+                            const fld = ev.target.parentElement;
+                            if (fld !== scene.children[scene.children.length-1]) {
+                                for (let idx = 0; scene.children.length; idx++) {
+                                    if (fld == scene.children[idx]){
+                                        fld.parentNode.insertBefore(fld, scene.children[idx+direction].nextSibling);
+                                        break;
+                                    }
+                                }
+                            }
+                        });
+                        break;
+                }
+                return btn;
+            }
+            function makeTypeSelect(boxTypes=['TEXTBOX', 'ASCII', 'SPEECH', 'THOUGHT']) {
+                // make a type select dropdown
+                const dropd = document.createElement('select');
+                for (const t of boxTypes) {
+                    const opt = document.createElement('option');
+                    opt.value = t;
+                    opt.innerText = t;
+                    dropd.appendChild(opt);
+                }
+                dropd.addEventListener('change', onTypeChange);
+                dropd.classList = dropd.value;
+                return dropd;
+            }
+
+            function makeLJSON() {
+                const fields = document.querySelectorAll('#scene > div');
+                const sceneLJSON = [];
+                document.querySelector('#ljson').value = '';
+                for (const f of fields) {
+                    const t = f.querySelector('select').value;
+                    let val = f.querySelector('textarea').value;
+                    switch (t) {
+                        case "TEXTBOX":
+                            val = val.trim();
+                            val = val.replace(/(?:\r\n|\r|\n)/g, ''); // remove all input linebreaks etc.
+                            break;
+                        case "ASCII":
+                            val = val.replace(/(?:\r\n|\r|\n)/g, ''); // remove all input linebreaks etc.
+                            const col = parseInt(document.querySelector('#col').value);
+                            if (val.length % col != 0) {
+                                throw new Error('ASCII picture must have a rectangular shape.');
+                            }
+                            break;
+                        case "SPEECH":
+                            //val = val.trim();
+                            val = val.split('\n');
+                            validVal = [];
+                            val.forEach((el, idx) => {
+                                const [character, text, other] = el.split('|');
+                                if (character && text) validVal.push([character.trim(), text.trim()]);
+                            });
+                            val = validVal;
+                            break;
+                        case "THOUGHT":
+                            //val = val.trim();
+                            val = val.split('\n');
+                            validVal = [];
+                            val.forEach((el, idx) => {
+                                const [character, text, other] = el.split('|');
+                                if (character && text) validVal.push([character.trim(), text.trim()]);
+                            });
+                            val = validVal;
+                    }
+                    if (val && val.length>0) sceneLJSON.push([t, val]);
+                }
+                document.querySelector('#ljson').value = JSON.stringify(sceneLJSON);
+            }
+
+            function addField() {
+                // add a new field to scene
+                const scene = document.querySelector('#scene');
+                const wrapper = document.createElement('div');
+                // input box
+                const tb = document.createElement('textarea');
+                tb.cols = document.querySelector('#col').value;
+                tb.classList.add('field');
+                tb.value = "Test";
+                // actions
+                const btn = makeRemoveBtn();
+                const dropd = makeTypeSelect();
+                const moveUp = makeMoveBtn(-1);
+                const moveDown = makeMoveBtn(1);
+                // build scene
+                wrapper.appendChild(tb);
+                wrapper.appendChild(btn);
+                wrapper.appendChild(dropd);
+                wrapper.appendChild(moveUp);
+                wrapper.appendChild(moveDown);
+                scene.appendChild(wrapper);
+            }
+            function addEvents() {
+                document.querySelector('#col').addEventListener('change', onChangeCol);
+                document.querySelector('#add').addEventListener('click', addField);
+                document.querySelector('#ljsonbtn').addEventListener('click', makeLJSON);
+            }
+
+            function main() {
+                // default settings
+                document.querySelector('#col').value = 28;
+                document.querySelector('#ljson').value = '';
+
+                addEvents();
+                addField();
+
+            }
+            window.onload = main();
+        </script>
+    </body>
+</html>
