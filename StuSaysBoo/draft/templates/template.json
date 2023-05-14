@@ -1,0 +1,55 @@
+{
+    "META": {
+        "TITLE": "Fancy title",
+        "AUTHOR": "Lou J. Son",
+        "VERSION": "version id",
+        "SUMMARY": "A summary."
+    },
+    "SCENE": {
+        "#cover": [
+            [
+                "TEXTBOX",
+                "Who is Stu?"
+            ],
+            [
+                "ASCII",
+                "               /\\ /\\        \n               \\/_\\/        \n     Stu says b(o.O)!zz     \n               / \" \\/       \n               ()~()        ",
+                {
+                    "zz": "🫀"
+                }
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "author",
+                        "Lou J. Son"
+                    ]
+                ]
+            ]
+        ],
+        "#sc1": [
+            [
+                "ASCII",
+                "    / \\ /|\\/|\\ /|\\/ \\ o  o  \n        / \\/ \\ / \\   /|\\/|\\ \n                     / \\/ \\ "
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "teen1",
+                        "Look at that queue! Get a life, guys!"
+                    ],
+                    [
+                        "teen2",
+                        "Hehe, yeah get a --"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                888         \n    vvv        (   )        \n   (~_~)      )(o_o)(       \n    / \\         / \\         \n    | |         | |         "
+            ]
+        ]
+    }
+}
