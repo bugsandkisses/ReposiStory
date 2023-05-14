@@ -1,0 +1,196 @@
+{
+    "META": {
+        "TITLE": "Pushing carrots",
+        "AUTHOR": "Lou J. Son",
+        "VERSION": "2023-05-13",
+        "SUMMARY": "Stu, the rabbit is pushing up the carrots but eventually he realizes a solid ground to leave."
+    },
+    "SCENE": {
+        "#cover": [
+            [
+                "TEXTBOX",
+                "Pushing carrots"
+            ],
+            [
+                "ASCII",
+                "               /\\ /\\        \n               \\/_\\/        \n               (o.O) cc     \n               / \" \\/       \n               ()~()        ",
+                {
+                    "cc": "🥕"
+                }
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "author",
+                        "Lou J. Son"
+                    ]
+                ]
+            ]
+        ],
+        "#01": [
+            [
+                "TEXTBOX",
+                "Once upon a time and all at once, there is a rabbit."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Boo!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n            / \" \\           \n            ()~()           "
+            ]
+        ],
+        "#02": [
+            [
+                "TEXTBOX",
+                "Stu, the rabbit, lives in a rabbit hole. He is pushing up the carrots."
+            ],
+            [
+                "ASCII",
+                "~~     ~~~~~~~~~~~~~cc~~~cc~\n {     }    /\\ /\\      cc  }\n {     } cc \\/_\\/ cc       }\n {         \\(o.O)/         }\n {          / \" \\          }\n {    cc    ()~()    cc    }\n ~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                {
+                    "cc": "🥕"
+                }
+            ]
+        ],
+        "#03": [
+            [
+                "SPEECH",
+                [
+                    [
+                        "framer",
+                        "The carrots just don't thrive this fall. What a lazy bunny I have there."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                    ___     \n                  _/___\\_   \n                   (._.)    \n                    / \\     \n                    | |     \n~~     ~~~~~~~~~~~~~cc~~~cc~\n {     }    /\\ /\\          }\n {     } cc \\/_\\/ cc       }",
+                {
+                    "cc": "🥕"
+                }
+            ]
+        ],
+        "#04": [
+            [
+                "TEXTBOX",
+                "Stu overhears the farmer's grumbling with his big rabbit ears."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Lazy me?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (T.T)           \n            / \" \\cc         \n            ()~()           ",
+                {
+                    "cc": "🥕"
+                }
+            ]
+        ],
+        "#05": [
+            [
+                "TEXTBOX",
+                "Stu works so hard that the carrots literally shoot out of the patch."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "farmer",
+                        "WTF?!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                    ___     \n        cc    cc  _/___\\_   \n                   (._.)    \n         cc         / \\  cc \n             cc   cc| |     \n~~     ~~~~~~~~~~~~~cc~~~cc~\n {     }    /\\ /\\      cc  }\n {     } cc \\/_\\/ cc       }\n {         \\(o.O)/         }\n {          / \" \\          }\n {    cc    ()~()    cc    }\n ~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                {
+                    "cc": "🥕"
+                }
+            ]
+        ],
+        "#06": [
+            [
+                "TEXTBOX",
+                "One of the carrots comes out very wrong..."
+            ],
+            [
+                "ASCII",
+                "                    ___     \n                  _/___\\_   \n                   (x-x)    \n                    / \\     \n                  cc| |     ",
+                {
+                    "cc": "🥕"
+                }
+            ]
+        ],
+        "#07": [
+            [
+                "TEXTBOX",
+                "The flying carrot leads to an immediate death."
+            ],
+            [
+                "ASCII",
+                "                    ___     \n                  _/___\\_   \n                   (x-x)    \n                    /cc_    \n                    | |     ",
+                {
+                    "cc": "🥕"
+                }
+            ]
+        ],
+        "#08": [
+            [
+                "TEXTBOX",
+                "Luckily, Stu has a rabbit hole for the farmer."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Boo?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n   ___      / \" \\           \n _/___\\_    ()~()           \n~~     ~~~~~~~~~~~~~cc~~~cc~\n {     }                   }\n {     }                   }\n { \\ |                     }\n {__cc__                   }\n {(x-x)                    }\n ~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                {
+                    "cc": "🥕"
+                }
+            ]
+        ],
+        "#09": [
+            [
+                "TEXTBOX",
+                "Standing by his uninhabitable rabbit hole and eating a carrot -- that is when Stu finally realizes the true purpose of his existence:"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Boo? Friends?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n   ___      / \" \\cc         \n _/___\\_    ()~()           \n~~     ~~~~~~~~~~~~~~~~~~cc~",
+                {
+                    "cc": "🥕"
+                }
+            ]
+        ]
+    }
+}
