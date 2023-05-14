@@ -165,6 +165,21 @@
                 dropd.classList = dropd.value;
                 return dropd;
             }
+            
+            function chunkTextAt(text, at='\\s', maxlength=28) {
+                /* Split string into chunk of max. length
+                */
+                const chunkRegex = new RegExp('.{1,' + maxlength + '}(?:'+at+'|$)', 'g');
+                text = text.match(chunkRegex);
+                text = text.map(s => s.trim());
+                return text;
+            }
+            function alignStrings(textArr, lineWidth) {
+                textArr.forEach((val, idx) => {
+                    if (val.length < lineWidth) textArr[idx] = `${val}${' '.repeat(lineWidth - val.length)}`;
+                })
+                return textArr;
+            }
 
             function makeLJSON() {
                 const fields = document.querySelectorAll('#scene > div');
@@ -184,6 +199,11 @@
                             if (val.length % col != 0) {
                                 throw new Error('ASCII picture must have a rectangular shape.');
                             }
+                            if (val.length > col) {
+                                val = chunkTextAt(val, at='.',maxlength=col-1);
+                                val = val.join("\n");
+                            }
+                            //val = JSON.stringify(val);
                             break;
                         case "SPEECH":
                             //val = val.trim();
