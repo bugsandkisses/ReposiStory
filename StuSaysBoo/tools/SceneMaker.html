@@ -166,11 +166,12 @@
                 return dropd;
             }
             
-            function chunkTextAt(text, at='\\s', maxlength=28) {
+            function chunkTextAt(text, trim=false, at='\\s', maxlength=28) {
                 /* Split string into chunk of max. length
                 */
                 const chunkRegex = new RegExp('.{1,' + maxlength + '}(?:'+at+'|$)', 'g');
                 text = text.match(chunkRegex);
+                //if (trim)
                 text = text.map(s => s.trim());
                 return text;
             }
@@ -194,6 +195,7 @@
                             val = val.replace(/(?:\r\n|\r|\n)/g, ''); // remove all input linebreaks etc.
                             break;
                         case "ASCII":
+                            // TODO: FIX ASCII
                             val = val.replace(/(?:\r\n|\r|\n)/g, ''); // remove all input linebreaks etc.
                             const col = parseInt(document.querySelector('#col').value);
                             if (val.length % col != 0) {
