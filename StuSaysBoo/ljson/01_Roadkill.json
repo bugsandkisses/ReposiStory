@@ -1,0 +1,132 @@
+{
+    "META": {
+        "TITLE": "Roadkill",
+        "AUTHOR": "Lou J. Son",
+        "VERSION": "2023-05-14",
+        "SUMMARY": "A summary."
+    },
+    "SCENE": {
+        "#cover": [
+            [
+                "TEXTBOX",
+                "Roadkill"
+            ],
+            [
+                "ASCII",
+                "               /\\ /\\        \n               \\/_\\/        \n               (o.O)        \n               / \" \\zz      \n               ()~()        ",
+                {
+                    "zz": "📱"
+                }
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "author",
+                        "Lou J. Son"
+                    ]
+                ]
+            ]
+        ],
+        "#00": [
+            [
+                "TEXTBOX",
+                "Stu is lost in thought."
+            ],
+            [
+                "THOUGHT",
+                [
+                    [
+                        "Stu",
+                        "Where friends? Where?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n   ___      / \" \\cc         \n _/___\\_    ()~()           \n~~     ~~~~~~~~~~~~~cc~~~cc~",
+                {
+                    "cc": "🥕"
+                }
+            ]
+        ],
+        "#01": [
+            [
+                "TEXTBOX",
+                "He pulls out the phone that he borrowed from a farmer."
+            ],
+            [
+                "ASCII",
+                "               /\\ /\\        \n               \\/_\\/        \n               (o.O)        \n               / \" \\zz      \n               ()~()        ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#02": [
+            [
+                "ASCII",
+                "   ______________________   \n  |                      |  \n  |        CCC    CCCC   |  \n  |    CCC C      C      |  \n  |    C   CCC    CCCC   |  \n  |    CCC               |  \n  |                      |  \n  |    Click      Chirp  |  \n  |    Clock             |  \n  |                      |  \n  |                      |  \n  |      I        NN N   |  \n  |      I        N NN   |  \n  |      I        N  N   |  \n  |                      |  \n  |    Insta      Nose   |  \n  |    graf       Book   |  \n  |                      |  \n  |                      |  \n  |   U U TTT            |  \n  |   U U  T             |  \n  |   UUU  T             |  \n  |                      |  \n  |   U-Tube             |  \n  |______________________|  "
+            ],
+            [
+                "THOUGHT",
+                [
+                    [
+                        "Stu",
+                        "So many friends..."
+                    ]
+                ]
+            ]
+        ],
+        "#03": [
+            [
+                "TEXTBOX",
+                "A post grabs his attention."
+            ],
+            [
+                "ASCII",
+                "   ______________________   \n  |  __________________  |  \n  |  |                |  |  \n  |  |                |  |  \n  |  |    (8)         |  |  \n  |  |   (888)        |  |  \n  |  |  8(^.^)8       |  |  \n  |  |  gg/ \\pp       |  |  \n  |  |    | |         |  |  \n  |  |_____________<3_|  |  \n  |                      |  \n  |  > Hey, there! It's  |  \n  |    bunny time!       |  \n  |    The new Stu book  |  \n  |    Is available      |  \n  |    starting from     |  \n  |    Friday, 13th!     |  \n  |    Meet me at the    |  \n  |    mall for books    |  \n  |    and autographs    |  \n  |                      |  \n  | #killerbunny #lou    |  \n  | #mall #meetandgreet  |  \n  | #rabbit #stusaysboo  |  \n  |______________________|  ",
+                {
+                    "gg": "📕",
+                    "pp": "🖊️"
+                }
+            ]
+        ],
+        "#04": [
+            [
+                "TEXTBOX",
+                "And he works out a plan."
+            ],
+            [
+                "ASCII",
+                "   ______________________   \n  |                      |  \n  |   o                  |  \n  |   | here             |  \n  |   >>>>>>>v           |  \n  |          v>>>>>>>>v  |  \n  |                   v  |  \n  |                   v  |  \n  |      v<<<<<<<<<<<<v  |  \n  |      v               |  \n  |      v               |  \n  |      v               |  \n  |      v               |  \n  |      v               |  \n  |      v>>>>>>>>v      |  \n  |               v>v    |  \n  |                 v    |  \n  |          v<<<<<<v    |  \n  | v<<<<<<<<v           |  \n  | v                    |  \n  | v                    |  \n  | v o              N   |  \n  | v>| there       W E  |  \n  |                  S   |  \n  |______________________|  "
+            ]
+        ],
+        "#05": [
+            [
+                "TEXTBOX",
+                "Now nothing can stop Stu from accomplishing his purpose..."
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n            / \" \\zz         \n            ()~()           ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#06": [
+            [
+                "TEXTBOX",
+                "...except for every vehicle on the road that he is walking on."
+            ],
+            [
+                "ASCII",
+                " /--------\\                 \n/ /------\\ \\                \n /________\\ \\___            \n                |           \n                |   /\\ /\\   \n                |   \\/_\\/   \n __      __     |   (o.O)   \n/  \\----/  \\___/    / \" \\zz \n\\__/    \\__/        ()~()   ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ]
+    }
+}
