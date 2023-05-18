@@ -1,0 +1,54 @@
+{
+    "META": {
+        "TITLE": "Killing Korrection",
+        "AUTHOR": "Lou J. Son",
+        "VERSION": "2023-05-18",
+        "SUMMARY": "Stu makes a correction on an essay."
+    },
+    "SCENE": {
+        "#cover": [
+            [
+                "TEXTBOX",
+                "Killing Korrection"
+            ],
+            [
+                "ASCII",
+                "               /\\ /\\        \n               \\/_\\/        \n               (o.O)        \n               / \" \\zzz     \n               ()~()        ",
+                {
+                    "zzz": "\uD83D\uDD8D\uFE0F"
+                }
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "author",
+                        "Lou J. Son"
+                    ]
+                ]
+            ]
+        ],
+        "#00": [
+            [
+                "TEXTBOX",
+                "Stu is lost in thought."
+            ],
+            [
+                "THOUGHT",
+                [
+                    [
+                        "Stu",
+                        "Where friends? Where?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n   ___      / \" \\cc         \n _/___\\_    ()~()           \n~~     ~~~~~~~~~~~~~cc~~~cc~",
+                {
+                    "cc": "🥕"
+                }
+            ]
+        ]
+    }
+}

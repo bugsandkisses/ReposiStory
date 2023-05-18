@@ -2,8 +2,8 @@
     "META": {
         "TITLE": "Roadkill",
         "AUTHOR": "Lou J. Son",
-        "VERSION": "2023-05-14",
-        "SUMMARY": "A summary."
+        "VERSION": "2023-05-17",
+        "SUMMARY": "Stu is on the open road -- nothing can stop him."
     },
     "SCENE": {
         "#cover": [
@@ -85,7 +85,7 @@
             ],
             [
                 "ASCII",
-                "   ______________________   \n  |  __________________  |  \n  |  |                |  |  \n  |  |                |  |  \n  |  |    (8)         |  |  \n  |  |   (888)        |  |  \n  |  |  8(^.^)8       |  |  \n  |  |  gg/ \\pp       |  |  \n  |  |    | |         |  |  \n  |  |_____________<3_|  |  \n  |                      |  \n  |  > Hey, there! It's  |  \n  |    bunny time!       |  \n  |    The new Stu book  |  \n  |    Is available      |  \n  |    starting from     |  \n  |    Friday, 13th!     |  \n  |    Meet me at the    |  \n  |    mall for books    |  \n  |    and autographs    |  \n  |                      |  \n  | #killerbunny #lou    |  \n  | #mall #meetandgreet  |  \n  | #rabbit #stusaysboo  |  \n  |______________________|  ",
+                "   ______________________   \n  |  __________________  |  \n  |  |                |  |  \n  |  |                |  |  \n  |  |    (8)         |  |  \n  |  |   (888)        |  |  \n  |  |  8(^.^)8       |  |  \n  |  |  gg/ \\pp       |  |  \n  |  |    | |         |  |  \n  |  |_____________<3_|  |  \n  |                      |  \n  |  > Hey, there! It's  |  \n  |    bunny time!       |  \n  |    The new Stu book  |  \n  |    is available      |  \n  |    starting from     |  \n  |    Friday, 13th!     |  \n  |    Meet me at the    |  \n  |    mall for books    |  \n  |    and autographs!   |  \n  |                      |  \n  | #killerbunny #lou    |  \n  | #mall #meetandgreet  |  \n  | #rabbit #stusaysboo  |  \n  |______________________|  ",
                 {
                     "gg": "📕",
                     "pp": "🖊️"
@@ -122,7 +122,182 @@
             ],
             [
                 "ASCII",
-                " /--------\\                 \n/ /------\\ \\                \n /________\\ \\___            \n                |           \n                |   /\\ /\\   \n                |   \\/_\\/   \n __      __     |   (o.O)   \n/  \\----/  \\___/    / \" \\zz \n\\__/    \\__/        ()~()   ",
+                " /--------\\                 \n/ /------\\ \\                \n /________\\ \\_____          \n                  |         \n                  | /\\ /\\   \n                  | \\/_\\/   \n __      __       | (o.O)   \n/  \\----/  \\______/ / \" \\zz \n\\__/    \\__/        ()~()   ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#07": [
+            [
+                "TEXTBOX",
+                "Phew, that was a close call!"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Driver",
+                        "Get off the road, furball! Don't you know the traffic code?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                 /--------\\ \n                / /------\\ \\\n            ___/ /________\\ \n           |                \n /\\ /\\     |                \n \\/ \\/     |                \n (o.O)     |     __      __ \n / \" \\zz    \\___/  \\----/  \\\n ()~()          \\__/    \\__/",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#08": [
+            [
+                "TEXTBOX",
+                "Stu doesn't know the traffic code."
+            ],
+            [
+                "THOUGHT",
+                [
+                    [
+                        "Stu",
+                        "???"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n            / \" \\zz         \n            ()~()           ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#09": [
+            [
+                "SPEECH",
+                [
+                    [
+                        "GuyWithPhone",
+                        "OMG, look at that stupid bunny! It will look so frigging awesome when a truck runs over it. I need to film that for my channel."
+                    ],
+                    [
+                        "Stu",
+                        "Traffic code? You know?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                  /\\ /\\     \n eeee             \\/_\\/     \n(@>@)             (o.O)     \n / \\zz            / \" \\zz   \n | |              ()~()     ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#10": [
+            [
+                "SPEECH",
+                [
+                    [
+                        "GuyWithPhone",
+                        "What?"
+                    ],
+                    [
+                        "Stu",
+                        "Good code? Traffic code?"
+                    ],
+                    [
+                        "GuyWithPhone",
+                        "What ya saying?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                  /\\ /\\     \n eeee             \\/_\\/     \n(@>@)             (o.O)     \n / \\zz            / \" \\zz   \n | |              ()~()     ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#11": [
+            [
+                "TEXTBOX",
+                "The traffic is loud and noisy. Stu is hardly audible. The guy with the phone approaches."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "GuyWithPhone",
+                        "What?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                  /\\ /\\     \n          eeee    \\/_\\/     \n         (@>@)    (o.O)     \n          / \\zz   / \" \\zz   \n          | |     ()~()     ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#12": [
+            [
+                "TEXTBOX",
+                "A truck approaches."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "GuyWithPhone",
+                        "What?"
+                    ],
+                    [
+                        "Stu",
+                        "Good code?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "       |                    \n       |                    \n       |                    \n___    |             /\\ /\\  \n   \\   |     eeee    \\/_\\/  \n    \\__|    (@>@)    (o.O)  \n    /        / \\zz   / \" \\zz\n___/         | |     ()~()  ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#13": [
+            [
+                "TEXTBOX",
+                "The truck passes and suddenly, the guy is gone."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Boo?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                    |       \n                    |       \n                    |       \n   /\\ /\\            |    ___\n   \\/_\\/            |   /   \n   (o.O)            |__/    \n   / \" \\zz             \\    \n   ()~()      __zz__    \\___",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#14": [
+            [
+                "TEXTBOX",
+                "Stu keeps his phone in case he comes back."
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n          zz/ \" \\zz         \n            ()~()           ",
                 {
                     "zz": "📱"
                 }

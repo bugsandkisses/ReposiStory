@@ -175,6 +175,11 @@
                 text = text.map(s => s.trim());
                 return text;
             }
+            function chunkN(text, n) {
+                const chunkRegex = new RegExp('.{1,' + n + '}', 'g');
+                text = text.match(chunkRegex);
+                return text;
+            }
             function alignStrings(textArr, lineWidth) {
                 textArr.forEach((val, idx) => {
                     if (val.length < lineWidth) textArr[idx] = `${val}${' '.repeat(lineWidth - val.length)}`;
@@ -202,8 +207,9 @@
                                 throw new Error('ASCII picture must have a rectangular shape.');
                             }
                             if (val.length > col) {
-                                val = chunkTextAt(val, at='.',maxlength=col-1);
-                                val = val.join("\n");
+                                //val = chunkTextAt(val, trim=false,at='.',maxlength=col-1);
+                                val = chunkN(val, col); //console.log(val);
+                                val = val.join("\n"); //console.log(val)
                             }
                             //val = JSON.stringify(val);
                             break;
