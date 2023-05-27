@@ -1,0 +1,287 @@
+{
+    "META": {
+        "TITLE": "Coding First Aid Kit",
+        "AUTHOR": "Lou J. Son",
+        "VERSION": "2023-05-23",
+        "SUMMARY": "Stu packs a coding first aid kit and puts in it..."
+    },
+    "SCENE": {
+        "#cover": [
+            [
+                "TEXTBOX",
+                "Coding First Aid Kit"
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n          tt/ \" \\           \n            ()~()           ",
+                {
+                    "tt": "🧰"
+                }
+            ],
+            [
+                "THOUGHT",
+                [
+                    [
+                        "Stu",
+                        "From Stu"
+                    ]
+                ]
+            ]
+        ],
+        "#00": [
+            [
+                "TEXTBOX",
+                "This is Stu. Stu packs a coding first aid kit and puts in it..."
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n          tt/ \" \\           \n            ()~()           ",
+                {
+                    "tt": "🧰"
+                }
+            ]
+        ],
+        "#01": [
+            [
+                "TEXTBOX",
+                "...a letter,"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Read the error message again and double check your code!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "   ------          /\\ /\\    \n  | Ò  Ò |         \\/_\\/    \n  |  __  |         (o.O)    \n   ------        tt/ \" \\    \n    _||_           ()~()    ",
+                {
+                    "tt": "💌"
+                }
+            ]
+        ],
+        "#02": [
+            [
+                "TEXTBOX",
+                "...the same letter again,"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Repeat."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "   ------          /\\ /\\    \n  | Ò  Ò |         \\/_\\/    \n  |  __  |         (o.O)    \n   ------        tt/ \" \\    \n    _||_           ()~()    ",
+                {
+                    "tt": "💌"
+                }
+            ]
+        ],
+        "#03": [
+            [
+                "TEXTBOX",
+                "...a magnifying glass,"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Duck, duck if others have encountered similar issues!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                   /\\ /\\    \n                   \\/_\\/    \n                   (o.O)    \n    (o)< (o)<    tt/ \" \\    \n   \\(_) \\(_)       ()~()    ",
+                {
+                    "tt": "🔍"
+                }
+            ]
+        ],
+        "#04": [
+            [
+                "TEXTBOX",
+                "...a folder,"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Look up examples and docs -- compare to your own code."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "      ____         /\\ /\\    \n     /    \\        \\/_\\/    \n    / THE  \\       (o.O)    \n    \\ DOCS /     tt/ \" \\    \n     \\____/        ()~()    ",
+                {
+                    "tt": "📁"
+                }
+            ]
+        ],
+        "#05": [
+            [
+                "TEXTBOX",
+                "...a cup of tea,"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Have a break."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                   /\\ /\\    \n    abbcc          \\/_\\/    \n    ______         (o.O)    \n      ||         tt/ \" \\    \n      ||           ()~()    ",
+                {
+                    "tt": "🥤",
+                    "a": "☕",
+                    "bb": "🍵",
+                    "cc": "🥕"
+                }
+            ]
+        ],
+        "#06": [
+            [
+                "TEXTBOX",
+                "...a light bulb,"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Challenge your concept of how you think it should work."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                   /\\ /\\    \n                   \\/_\\/    \n                   (o.O)    \n                 tt/ \" \\    \n                   ()~()    ",
+                {
+                    "tt": "💡"
+                }
+            ]
+        ],
+        "#07": [
+            [
+                "TEXTBOX",
+                "...a map,"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Try a different approach. There is often more than one way."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "    ______         /\\ /\\    \n   /      |        \\/_\\/    \n  / OTHER |        (o.O)    \n  \\  WAYS |     ttt/ \" \\    \n   \\______|        ()~()    ",
+                {
+                    "ttt": "🗺️"
+                }
+            ]
+        ],
+        "#08": [
+            [
+                "TEXTBOX",
+                "...a puzzle piece,"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Disassemble and reassemble!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                   /\\ /\\    \n                   \\/_\\/    \n    tt tt          (o.O)    \n    tt tt        tt/ \" \\    \n    tt tt          ()~()    ",
+                {
+                    "tt": "🧩"
+                }
+            ]
+        ],
+        "#09": [
+            [
+                "TEXTBOX",
+                "...an umbrella,"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Pour your heart out to me. But let me get an umbrella first."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                   /\\ /\\    \n                   \\/_\\/    \n                   (o.O)    \n                 tt/ \" \\    \n                   ()~()    ",
+                {
+                    "tt": "☂️"
+                }
+            ]
+        ],
+        "#10": [
+            [
+                "TEXTBOX",
+                "...a teddy bear,"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Go to sleep. Try again tomorrow."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                   /\\ /\\    \n                   \\/_\\/    \n  |                (o.O)    \n  |_______|      tt/ \" \\    \n  |       |        ()~()    ",
+                {
+                    "tt": "🧸"
+                }
+            ]
+        ],
+        "#11": [
+            [
+                "TEXTBOX",
+                "...and finally:"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Let someone else look at your code."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "   ------    (8)     /\\ /\\  \n  | ^  ^ |  (888)    \\/_\\/  \n  |  __  | 8(o_o)8   (o.O)  \n   ------    / \\     / \" \\  \n    _||_     | |     ()~()  "
+            ]
+        ]
+    }
+}
