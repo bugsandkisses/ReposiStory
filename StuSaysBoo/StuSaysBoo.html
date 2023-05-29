@@ -236,8 +236,10 @@
                 const numLen = (ljson.length - 1).toString().length;
                 for (let idx = 0; idx < ljson.length; idx++) {
                     const opt = $.createElement('option');
+                    const j = JSON.parse((ljson[idx]).value);
                     opt.textContent = `${idx.toString().padStart(numLen, '0')}) ` + (ljson[idx]).dataset.title;
                     opt.value = (ljson[idx]).dataset.title;
+                    opt.title = j.META.SUMMARY;
                     chpSelect.appendChild(opt);
                 }
                 /*for (const ch of ljson) {

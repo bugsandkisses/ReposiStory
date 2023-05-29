@@ -1,0 +1,482 @@
+{
+    "META": {
+        "TITLE": "Korrect Killing",
+        "AUTHOR": "Lou J. Son",
+        "VERSION": "2023-05-18",
+        "SUMMARY": "Stu makes a correction on an essay."
+    },
+    "SCENE": {
+        "#cover": [
+            [
+                "TEXTBOX",
+                "Korrect Killing"
+            ],
+            [
+                "ASCII",
+                "               /\\ /\\        \n               \\/_\\/        \n               (o.O)        \n               / \" \\zzz     \n               ()~()        ",
+                {
+                    "zzz": "🖍️"
+                }
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "author",
+                        "Lou J. Son"
+                    ]
+                ]
+            ]
+        ],
+        "#00": [
+            [
+                "TEXTBOX",
+                "Stu gets to a beautifully wrecked building and decides to take a lesson."
+            ],
+            [
+                "ASCII",
+                "                          | \n   _____________          | \n  |             |         | \n  |   SC_OOL    |         | \n  |_____________|         | \n                          | \n     _________            | \n    |    |    |    ____   | \n    |    |    |   |    |  | \n    |    |    |   |____|  | \n    |____|____|_          | \n    | |_________|_        | \n____|___|_________|_______| "
+            ]
+        ],
+        "#01": [
+            [
+                "TEXTBOX",
+                "Stu climbs through an open window."
+            ],
+            [
+                "ASCII",
+                "        _____________       \n       |             |      \n       |    /\\ /\\    |      \n       |    \\/_\\/    |      \n       |    (   )    |      \n       |___\\/   \\/___|      \n            | @ |           \n            (/ \\)           \n                            \n                            "
+            ]
+        ],
+        "#02": [
+            [
+                "TEXTBOX",
+                "It is like entering a different world of dusty sponges."
+            ],
+            [
+                "ASCII",
+                "                            \n                            \n                            \n                            \n  ~~~~~~~~~~~~              \n | °  o    °  |             \n |  °    °  o |             \n__~~~~~~~~~~~~______________"
+            ]
+        ],
+        "#03": [
+            [
+                "TEXTBOX",
+                "And clocks that stand still at 5 minutes to noon."
+            ],
+            [
+                "ASCII",
+                "       _____________        \n      /             \\       \n     /    \\          \\      \n    /      \\ |        \\     \n    |       \\|        |     \n    |        o        |     \n    |                 |     \n     \\               /      \n      \\_____________/       "
+            ]
+        ],
+        "#04": [
+            [
+                "TEXTBOX",
+                "And lavatory paper massacres and no soap."
+            ],
+            [
+                "ASCII",
+                "                            \n                  ______    \n                 |      |   \n         |       |      |   \n         |##|    |      |   \n          ## ###_|______|   \n           ###|         |   \n               \\        /   \n  ##   #####    \\____  /    \n___######_#####____|   |____"
+            ]
+        ],
+        "#05": [
+            [
+                "TEXTBOX",
+                "Stu is thrilled by all these horrors."
+            ],
+            [
+                "THOUGHT",
+                [
+                    [
+                        "Stu",
+                        "Wow!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (@.@)           \n            / \" \\           \n            ()~()           "
+            ]
+        ],
+        "#06": [
+            [
+                "TEXTBOX",
+                "He realizes that this could be a great place to find friends."
+            ],
+            [
+                "THOUGHT",
+                [
+                    [
+                        "Stu",
+                        "Friends!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (^.^)           \n            / \" \\           \n            ()~()           "
+            ]
+        ],
+        "#07": [
+            [
+                "TEXTBOX",
+                "But it is Friday afternoon and he just finds lots of empty halls and empty classrooms."
+            ],
+            [
+                "ASCII",
+                "       |   ____      ____   \n       |  |    |    |    |  \n       |  |    |    |    |  \n       |  |    |    |    |  \n    /| |__|____|____|____|  \n   / | /                    \n  /  |/                     \n  |  /                      \n  | /                       \n  |/                        \n  /                         \n /                          \n/                           "
+            ]
+        ],
+        "#08": [
+            [
+                "TEXTBOX",
+                "Then Stu finds room 406."
+            ],
+            [
+                "ASCII",
+                "          ________________  \n         |                | \n         |                | \n         |       /\\       | \n         |   ___/__\\___   | \n ______  |  |          |  | \n| Room | |  | DETENT-  |  | \n|  406 | |  | TION     |  | \n|______| |  |__________|  | \n         |                | \n         |                | \n         |                | \n         |                | \n_________|________________|_"
+            ]
+        ],
+        "#09": [
+            [
+                "TEXTBOX",
+                "He tears the door open and stares into the dangerous eyes of a teenager that just woke up from her afternoon nap."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Student",
+                        "_What_?!"
+                    ],
+                    [
+                        "Stu",
+                        "Boo!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                   ()~()    \n                   (-.-)    \n                ____/ | |   \n    /\\ /\\       |   /_|_|   \n    \\/_\\/       |  /|  |    \n    (   )                   \n    /   \\                   \n    | @ |                   "
+            ]
+        ],
+        "#10": [
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Am Stu! Friends?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (^.^)  ____/ | |   \n         / \" \\  |   /_|_|   \n         ()~()  |  /|  |    "
+            ]
+        ],
+        "#11": [
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Am Stu! Friends?"
+                    ],
+                    [
+                        "Student",
+                        "Are you stupid? What the heck are you anyways?"
+                    ],
+                    [
+                        "Stu",
+                        "Friend!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (^.^)  ____/ | |   \n         / \" \\  |   /_|_|   \n         ()~()  |  /|  |    "
+            ]
+        ],
+        "#12": [
+            [
+                "TEXTBOX",
+                "He takes out the two smartphones that he has borrowed and shows her his plan: Maybe she would like to go to the mall with him?"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Look!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (^.^)  ____/ | |   \n       zz/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#13": [
+            [
+                "ASCII",
+                "   ______________________   \n  |  __________________  |  \n  |  |                |  |  \n  |  |                |  |  \n  |  |    (8)         |  |  \n  |  |   (888)        |  |  \n  |  |  8(^.^)8       |  |  \n  |  |  bb/ \\pp       |  |  \n  |  |    | |         |  |  \n  |  |_____________<3_|  |  \n  |                      |  \n  |  > Hey, there! It's  |  \n  |    bunny time!       |  \n  |    The new Stu book  |  \n  |    is available      |  \n  |    starting from     |  \n  |    Friday, 13th!     |  \n  |    Meet me at the    |  \n  |    mall for books    |  \n  |    and autographs!   |  \n  |                      |  \n  | #killerbunny #lou    |  \n  | #mall #meetandgreet  |  \n  | #rabbit #stusaysboo  |  \n  |______________________|  "
+            ]
+        ],
+        "#14": [
+            [
+                "SPEECH",
+                [
+                    [
+                        "Student",
+                        "I'm not getting anywhere because these stupid teachers want me write a stupid 3-pages essay because I tried to flush those stupid middle school girls down the closet."
+                    ],
+                    [
+                        "Stu",
+                        "Boo?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (-.-)    \n         (o.O)  ____/ | |   \n       zz/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#15": [
+            [
+                "SPEECH",
+                [
+                    [
+                        "Student",
+                        "Hehe, one of the wore glasses and the other one had nicer shoes than me."
+                    ],
+                    [
+                        "Stu",
+                        "Boo?"
+                    ],
+                    [
+                        "Student",
+                        "Yeah, well they just shouldn't use the restroom if they don't want to get flushed down the closet..."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (-.-)    \n         (o.O)  ____/ | |   \n       zz/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#16": [
+            [
+                "SPEECH",
+                [
+                    [
+                        "Student",
+                        "And you better back off if you don't want me to the same with you, stupid!"
+                    ],
+                    [
+                        "Stu",
+                        "No friends?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (o.O)  ____/ | |   \n       zz/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#17": [
+            [
+                "TEXTBOX",
+                "Suddenly, she notices the phone that Stu had borrowed from the guy on the road."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Student",
+                        "No f... Waaait, is that the new die-phone that you have there?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (@.@)    \n         (o.O)  ____/ | |   \n       zz/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#18": [
+            [
+                "SPEECH",
+                [
+                    [
+                        "Student",
+                        "Okay, but as a friend, you have to do my essay for me. In the meantime, I hold your die-phone for you."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (@.@)    \n         (o.O)  __zz/ | |   \n         / \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#19": [
+            [
+                "TEXTBOX",
+                "Stu is excited to have found a friend that he can go to the mall with. He just has to finish an essay, then they are ready to go!"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Friend!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (@.@)    \n         (*.*)  __zz/ | |   \n         / \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#20": [
+            [
+                "TEXTBOX",
+                "Unfortunately, his new friend has not made it past 3 sentences yet."
+            ],
+            [
+                "ASCII",
+                "  ________________________  \n |                        | \n | ESSAY                  | \n | -----                  | \n | I sHaLl NoT gEt CaUgHt | \n | FlUsHiNg StUdEnTs DoWn | \n | ThE cLoSeT bEcAuSe I   | \n | wIlL gEt DeTeNtIoN.    | \n | Blabla. Bla.           | \n |                        | \n |                        | "
+            ]
+        ],
+        "#21": [
+            [
+                "TEXTBOX",
+                "So Stu gets a pencil and starts by reworking the introduction."
+            ],
+            [
+                "ASCII",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (o.O)  __zz/ | |   \n      ppp/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                {
+                    "zz": "📱",
+                    "ppp": "🖍️"
+                }
+            ]
+        ],
+        "#22": [
+            [
+                "TEXTBOX",
+                "He crosses out the not-so-persuasive parts."
+            ],
+            [
+                "ASCII",
+                "  ________________________  \n |                        | \n | ESSAY       /          | \n | ----- \\    /  \\    /   | \n | I sHaLl\\No/ gEt\\Ca/gHt | \n | FlUsHiNg\\/tUdEnT\\/DoWn | \n | ThE cLoS/\\ bEcAu/\\ I   | \n | wIlL gE/ D\\TeNt/oN\\    | \n | Blabla/ Bla\\  /    \\   | \n |      /      \\          | \n |              \\         | "
+            ]
+        ],
+        "#23": [
+            [
+                "SPEECH",
+                [
+                    [
+                        "Student",
+                        "Hey! What are you doing there?"
+                    ],
+                    [
+                        "Stu",
+                        "Help."
+                    ],
+                    [
+                        "Student",
+                        "Give me that pencil, pronto!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (o.O)  __zz/ | |   \n      ppp/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                {
+                    "zz": "📱",
+                    "ppp": "🖍️"
+                }
+            ]
+        ],
+        "#24": [
+            [
+                "TEXTBOX",
+                "Unexpectedly, she throws the die-phone at Stu..."
+            ],
+            [
+                "ASCII",
+                "       zz  --               \n               \\            \n                            \n         /\\ /\\   \\ ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (o.O)  ____/ | |   \n      ppp/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                {
+                    "zz": "📱",
+                    "ppp": "🖍️"
+                }
+            ]
+        ],
+        "#25": [
+            [
+                "TEXTBOX",
+                "With shock, the pencil slips right out of Stu's paw."
+            ],
+            [
+                "ASCII",
+                "                            \n                            \n             --  ppp        \n         --                 \n     --                     \n                            \n                            ",
+                {
+                    "ppp": "🖍️"
+                }
+            ]
+        ],
+        "#26": [
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Boo?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (x.x)    \n         (o.O)  ___ppp| |   \n         / \" \\zz|   /_|_|   \n zz      ()~()  |  /|  |    ",
+                {
+                    "zz": "📱",
+                    "ppp": "🖍️"
+                }
+            ]
+        ],
+        "#27": [
+            [
+                "TEXTBOX",
+                "This die-phone is very robust."
+            ],
+            [
+                "ASCII",
+                "   /\\ /\\           ()~()    \n   \\/_\\/           (x.x)    \n   (o.O)        ___ppp| |   \n zz/ \" \\zz      |   /_|_|   \n   ()~()        |  /|  |    ",
+                {
+                    "zz": "📱",
+                    "ppp": "🖍️"
+                }
+            ]
+        ]
+    }
+}

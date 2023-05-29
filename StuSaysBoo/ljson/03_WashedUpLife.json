@@ -1,0 +1,38 @@
+{
+    "META": {
+        "TITLE": "Washed-Up Life",
+        "AUTHOR": "Lou J. Son",
+        "VERSION": "2023-05-29",
+        "SUMMARY": "Stu does laundry."
+    },
+    "SCENE": {
+        "#cover": [
+            [
+                "TEXTBOX",
+                "Washed-Up Life"
+            ],
+            [
+                "ASCII",
+                "               /\\ /\\        \n               \\/_\\/        \n               (o.O)        \n               / \" \\zz      \n               ()~()        ",
+                {
+                    "zz": "🧼️"
+                }
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "author",
+                        "Lou J. Son"
+                    ]
+                ]
+            ]
+        ],
+        "#00": [
+            [
+                "TEXTBOX",
+                "Laundry."
+            ]
+        ]
+    }
+}
