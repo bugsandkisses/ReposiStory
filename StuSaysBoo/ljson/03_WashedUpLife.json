@@ -2,7 +2,7 @@
     "META": {
         "TITLE": "Washed-Up Life",
         "AUTHOR": "Lou J. Son",
-        "VERSION": "2023-05-29",
+        "VERSION": "2023-06-02",
         "SUMMARY": "Stu does laundry."
     },
     "SCENE": {
@@ -15,7 +15,7 @@
                 "ASCII",
                 "               /\\ /\\        \n               \\/_\\/        \n               (o.O)        \n               / \" \\zz      \n               ()~()        ",
                 {
-                    "zz": "🧼️"
+                    "zz": "🐇"
                 }
             ],
             [
@@ -31,7 +31,419 @@
         "#00": [
             [
                 "TEXTBOX",
-                "Laundry."
+                "Going downtown, Stu is about to lose hope. None of his friends ever seems to last."
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n          zz/ \" \\zz         \n            ()~()           ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#01": [
+            [
+                "TEXTBOX",
+                "But a new chance opens up right in front of him."
+            ],
+            [
+                "ASCII",
+                "  SUPER LAUNDRY        |    \n__   ______   _______  |    \n  | |      | |       | |    \n  | |      | |       | |    \n__| |      | |_______| |    \n____|______|___________|    "
+            ]
+        ],
+        "#02": [
+            [
+                "TEXTBOX",
+                "Through the shop windows, he spots lots of boxes with doors."
+            ],
+            [
+                "THOUGHT",
+                [
+                    [
+                        "Stu",
+                        "Fancy rabbit holes!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "    ____________________    \n    |  _____     ____  |    \n    | |_____|   |____| |    \n    | |_____|          |    \n    |                  |    \n    |                  |    \n    |      ______      |    \n    |     / ____ \\     |    \n    |    / /    \\ \\    |    \n    |    | |    | |    |    \n    |    \\ \\____/ /    |    \n    |     \\______/     |    \n    |__________________|    "
+            ]
+        ],
+        "#03": [
+            [
+                "TEXTBOX",
+                "He thinks of his cozy rabbit hole that he left and it cuts him to the heart. But he has a mission and there is no way back."
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n          zz/ \" \\zz         \n            ()~()           ",
+                {
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#04": [
+            [
+                "TEXTBOX",
+                "Time to look ahead and into a new abyss."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Boo? Hello?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "    ____________________    \n    |  _____     ____  |    \n    | |_____|   |____| |    \n    | |_____|          |    \n    |                  |    \n    |                  |    \n ___|__    ______      |    \n/      \\  / /\\ /\\\\     |    \n        \\/  \\/_\\/ \\    |    \n         |  (   ) |    |    \n        /\\ _/   \\_/    |    \n\\______/  \\_| @ |/     |    \n    |_______(/_\\)______|    "
+            ]
+        ],
+        "#05": [
+            [
+                "TEXTBOX",
+                "It is not as nice as his former apartment but it appears to be quite modern."
+            ],
+            [
+                "ASCII",
+                "    ____________________    \n    |  _____     ____  |    \n    | |_____|   |____| |    \n    | |_____|          |    \n    |                  |    \n    |                  |    \n ___|__    ______      |    \n/      \\  //\\ /\\ \\     |    \n        \\/ \\/_\\/  \\    |    \n         | (o.O)  |    |    \n        /\\ / \" \\  /    |    \n\\______/  \\()~()_/     |    \n    |__________________|    "
+            ]
+        ],
+        "#06": [
+            [
+                "TEXTBOX",
+                "One can pay the rent directly to the apartment!"
+            ],
+            [
+                "ASCII",
+                "               ________     \n              |        |    \n              | INSERT |    \n              | COINS  |    \n              | ONLY!  |    \n              |________|    \n    ____________________    \n    |  _____     ____  |    \n    | |_____|   |____| |    \n    | |_____|          |    \n    |                  |    "
+            ]
+        ],
+        "#07": [
+            [
+                "TEXTBOX",
+                "Stu approaches a ma'am to change some money."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Ma'am, boo?"
+                    ],
+                    [
+                        "Ma'am",
+                        "Huh? What do you want?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "        /\\ /\\               \n        \\/_\\/       %%%%%   \n        (o.O)      %(-_-)%  \n        / \" \\      % / \\bb  \n        ()~()        | |    ",
+                {
+                    "bb": "👜"
+                }
+            ]
+        ],
+        "#08": [
+            [
+                "TEXTBOX",
+                "Stu points at one of the washing machines in the back."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Ma'am",
+                        "What's with that?"
+                    ],
+                    [
+                        "Stu",
+                        "One for me?"
+                    ],
+                    [
+                        "Ma'am",
+                        "The machine? You can't do laundry, you're a rabbit."
+                    ],
+                    [
+                        "Stu",
+                        "Change money, please!"
+                    ],
+                    [
+                        "Ma'am",
+                        "No, I'm busy. I don't have time to talk to rabbits anyways."
+                    ],
+                    [
+                        "Stu",
+                        "Busy?"
+                    ],
+                    [
+                        "Ma'am",
+                        "I don't talk to rabbits, I told you!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "        /\\ /\\               \n        \\/_\\/       %%%%%   \n        (o.O)      %(-_-)%  \n        / \" \\/     % / \\bb  \n        ()~()        | |    ",
+                {
+                    "bb": "👜"
+                }
+            ]
+        ],
+        "#09": [
+            [
+                "TEXTBOX",
+                "Stu takes another look at the machine: Maybe there is a way to pay with banknotes despite the sign? He throws some notes through the door."
+            ],
+            [
+                "ASCII",
+                "    ____________________    \n    |  _____     ____  |    \n    | |_____|   |____| |    \n    | |_____|          |    \n    |                  |    \n    |                  |    \n ___|__    ______      |    \n/      \\  /      \\     |    \n        \\//\\ /\\   \\    |    \n         |\\/_\\/   |    |    \n        /\\(   ) nn/    |    \n\\______/  /   \\/_/     |    \n    |_____()@()________|    ",
+                {
+                    "nn": "💸"
+                }
+            ]
+        ],
+        "#10": [
+            [
+                "TEXTBOX",
+                "Nothing happens."
+            ],
+            [
+                "ASCII",
+                "    ____________________    \n    |  _____     ____  |    \n    | |_____|   |____| |    \n    | |_____|          |    \n    |                  |    \n    |                  |    \n ___|__    ______      |    \n/      \\  /      \\     |    \n        \\//\\ /\\   \\    |    \n         |\\/_\\/   |    |    \n        /\\(   )   /    |    \n\\______/  /   \\__/     |    \n    |_____()@()________|    ",
+                {
+                    "nn": "💸"
+                }
+            ]
+        ],
+        "#11": [
+            [
+                "TEXTBOX",
+                "Then something happens."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Ma'am",
+                        "Wow, how much money was that???"
+                    ],
+                    [
+                        "Stu",
+                        "All."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "    ____________________    \n    |  _____     ____  |    \n    | |_____|   |____| |    \n    | |_____|          |    \n    |                  |    \n    |                  |    \n ___|__    ______      |    \n/      \\  /      \\     |    \n        \\//\\ /\\   \\    |    \n         |\\/_\\/   |  %%%%%  \n        /\\(   )   / %(   )% \n\\______/  /   \\__/  bb/ \\ % \n    |_____()@()_______| |   ",
+                {
+                    "bb": "👜"
+                }
+            ]
+        ],
+        "#12": [
+            [
+                "TEXTBOX",
+                "Stu spots a shiny piece on the floor."
+            ],
+            [
+                "ASCII",
+                "    ____________________    \n    |  _____     ____  |    \n    | |_____|   |____| |    \n    | |_____|          |    \n    |                  |    \n    |                  |    \n ___|__    ______      |    \n/      \\  /      \\     |    \n        \\//\\ /\\   \\    |    \n         |\\/_\\/   |  %%%%%  \n        /\\(o.O)   / %($.$)% \n\\______/  / \" \\__/  % / \\bb \n  cc|_____()~()_______| |   ",
+                {
+                    "bb": "👜",
+                    "cc": "🪙"
+                }
+            ]
+        ],
+        "#13": [
+            [
+                "TEXTBOX",
+                "It is a coin!"
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Ma'am",
+                        "So many banknotes!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "    ____________________    \n    |  _____     ____  |    \n    | |_____|   |____| |    \n    | |_____|          |    \n    |                  |    \n    |                  |    \n ___|__    ______      |    \n/      \\  /      \\     |    \n  /\\ /\\ \\/        \\    |    \n  \\/_\\/  |  %%%%% |    |    \n  (o.O) /\\ %(   )%/    |    \ncc/ \" \\/  \\%_/ \\_%     |    \n  ()~()______|_|_______|    ",
+                {
+                    "bb": "👜",
+                    "cc": "🪙"
+                }
+            ]
+        ],
+        "#14": [
+            [
+                "TEXTBOX",
+                "Happily, he slams the door and climbs to the coin slot."
+            ],
+            [
+                "ASCII",
+                "    ____________________    \n    |  _____     ____  |    \n    | |_____/\\ /\\____| |    \n    | |_____\\/_\\/      |    \n    |       (   ) cc   |    \n    |       /   \\/     |    \n    |      _()@()      |    \n    |     / ____ \\     |    \n    |    / /    \\ \\    |    \n    |    | |    | |    |    \n    |    \\ \\____/ /    |    \n    |     \\______/     |    \n    |__________________|    ",
+                {
+                    "cc": "🪙"
+                }
+            ]
+        ],
+        "#15": [
+            [
+                "TEXTBOX",
+                "The machine tells Stu to wait for more than 3 hours... Where has the ma'am gone? Stu feels lost."
+            ],
+            [
+                "ASCII",
+                "    ____________________    \n    |  _____     ____  |    \n    | |_____|   |3:03| |    \n    | |_____|          |    \n    |                  |    \n    |                  |    \n    |      ______      |    \n    |     / ____ \\     |    \n    |    / /%%%%\\ \\   /\\ /\\ \n    |    | |(x-x| |   \\/_\\/ \n    |    \\ \\_/_\\/ /   (o.O) \n    |     \\______/    / \" \\ \n    |_________________()~() "
+            ]
+        ],
+        "#16": [
+            [
+                "TEXTBOX",
+                "And found."
+            ],
+            [
+                "ASCII",
+                "                            \n        ________________    \n       |                |   \n       |  LOST & FOUND  |   \n       \\________________/   "
+            ]
+        ],
+        "#17": [
+            [
+                "TEXTBOX",
+                "The box is full of nice things."
+            ],
+            [
+                "THOUGHT",
+                [
+                    [
+                        "Stu",
+                        "Booo!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "  /\\ /\\                     \n  \\/_\\/   ________________  \n  (o.O)  |                | \n  / \" \\  |  LOST & FOUND  | \n  ()~()  \\________________/ "
+            ]
+        ],
+        "#18": [
+            [
+                "ASCII",
+                "  /\\ /\\                     \n  \\/_\\/   ________________  \n  (o.O)  |                | \n  / \" \\ii|  LOST & FOUND  | \n  ()~()  \\________________/ ",
+                {
+                    "ii": "🧦"
+                }
+            ]
+        ],
+        "#19": [
+            [
+                "ASCII",
+                "  /\\ /\\                     \n  \\/_\\/   ________________  \n  (o.O)  |                | \n  / \" \\ii|  LOST & FOUND  | \n  ()~()  \\________________/ ",
+                {
+                    "ii": "🍌"
+                }
+            ]
+        ],
+        "#20": [
+            [
+                "ASCII",
+                "  /\\ /\\                     \n  \\/_\\/   ________________  \n  (o.O)  |                | \n  / \" \\ii|  LOST & FOUND  | \n  ()~()  \\________________/ ",
+                {
+                    "ii": "🐇"
+                }
+            ]
+        ],
+        "#21": [
+            [
+                "TEXTBOX",
+                "Stu cannot decide what he likes better: The saw or the plush bunny. But when one finds a thing, he must lose another."
+            ],
+            [
+                "ASCII",
+                "  /\\ /\\                     \n  \\/_\\/   ________________  \n  (o.O)  |                | \njj/ \" \\ii|  LOST & FOUND  | \n  ()~()  \\________________/ ",
+                {
+                    "ii": "🐇",
+                    "jj": "🪚"
+                }
+            ]
+        ],
+        "#22": [
+            [
+                "TEXTBOX",
+                "His rabbit brain works flat out."
+            ],
+            [
+                "THOUGHT",
+                [
+                    [
+                        "Stu",
+                        "Saw or bunny? Bunny or saw?"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "  /\\ /\\                     \n  \\/_\\/   ________________  \n  (o.O)  |                | \nii/ \" \\jj|  LOST & FOUND  | \n  ()~()  \\________________/ ",
+                {
+                    "ii": "🐇",
+                    "jj": "🪚"
+                }
+            ]
+        ],
+        "#23": [
+            [
+                "TEXTBOX",
+                "But the die-phone that Stu has borrowed from someone is a good phone. Very robust, worth a saw plus a bunny. He could leave it here for that guy to find..."
+            ],
+            [
+                "THOUGHT",
+                [
+                    [
+                        "Stu",
+                        "Saw _and_ bunny!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "  /\\ /\\                     \n  \\/_\\/   ________zz______  \n  (o.O)  |                | \nii/ \" \\jj|  LOST & FOUND  | \n  ()~()  \\________________/ ",
+                {
+                    "ii": "🐇",
+                    "jj": "🪚",
+                    "zz": "📱"
+                }
+            ]
+        ],
+        "#24": [
+            [
+                "TEXTBOX",
+                "He is pleased with his find."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Stu",
+                        "Plushie, you're Blu now!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "            /\\ /\\           \n            \\/_\\/           \n            (o.O)           \n          jj/ \" \\ii         \n            ()~()           ",
+                {
+                    "ii": "🐇",
+                    "jj": "🪚"
+                }
             ]
         ]
     }
