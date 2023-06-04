@@ -1,6 +1,6 @@
 # ReposiStory
 
-Welcome to ReposiStory! This project is a collection of animated poetry and poetic animation.
+Welcome to ReposiStory! This project is a collection of animated poetry and poetic animation and whatever-you-may-call-it.
 
 ## I am Ai
 
@@ -17,3 +17,7 @@ A fish circling in a fishbowl.
 ## The Fairy circle
 
 Unfinished butterfly/ fairy animation.
+
+
+<br/>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
