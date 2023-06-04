@@ -22,8 +22,14 @@ _Stu says boo!_ is a console-based ascii-art comic with a twist. The story is ab
             /\ /\            
             \/_\/            
             (o.O)            
-          🧰/ " \             
+            / " \🧰           
             ()~()            
 ```
 
 In _Stu's life hacks_ Stu shares precious life hacks.
+
+
+## Known limitations
+
+- The comic only renders well for monospaced font.
+- Emojis are not monospaced.
