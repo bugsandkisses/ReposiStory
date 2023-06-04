@@ -1,0 +1,209 @@
+{
+    "META": {
+        "TITLE": "Who is Lou?",
+        "AUTHOR": "Lou J. Son",
+        "VERSION": "2023-06-04",
+        "SUMMARY": "Meet Lou."
+    },
+    "SCENE": {
+        "#cover": [
+            [
+                "TEXTBOX",
+                "Who is Lou?"
+            ],
+            [
+                "ASCII",
+                "  *       +      *     +    \n             (8)            \n     +   *  (888)    *      \n *         8(^o^)8      +   \n      +    bb/ \\pp          \n   *         | |     *      ",
+                {
+                    "bb": "📕",
+                    "pp": "🖊️"
+                }
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "author",
+                        "Lou J. Son"
+                    ]
+                ]
+            ]
+        ],
+        "#00": [
+            [
+                "TEXTBOX",
+                "Hey, I'm Lou. If you think you know me, you probably know me for my 'Stu says boo!' books."
+            ],
+            [
+                "ASCII",
+                "                            \n             (8)            \n            (888)           \n           8(o_o)8          \n             / \\            \n             | |            "
+            ]
+        ],
+        "#01": [
+            [
+                "TEXTBOX",
+                "If you don't: I am author of a series of comic books that is about a rabbit that wanders around killing people."
+            ],
+            [
+                "ASCII",
+                "          _______________   \n         |               |  \n         | Stu says boo! |  \n         |               |  \n         |     /\\ /\\     |  \n         |  xx \\/_\\/zz   |  \n   (8)   |    \\(o.O)/    |  \n  (888)  |     / \" \\     |  \n 8(o_o)8 |     ()~()     |  \n   / \\_  |_______________|  \n   | |    |             |   ",
+                {
+                    "xx": "🪚",
+                    "zz": "🫀"
+                }
+            ]
+        ],
+        "#02": [
+            [
+                "TEXTBOX",
+                "Had I known what would happen..."
+            ],
+            [
+                "ASCII",
+                "                            \n            /\\ /\\           \n         xx \\/_\\/ zz        \n           \\(o.O)/          \n            / \" \\           \n            ()~()           ",
+                {
+                    "xx": "🪚",
+                    "zz": "🫀"
+                }
+            ]
+        ],
+        "#03": [
+            [
+                "TEXTBOX",
+                "I had always loved to write and draw..."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Lou",
+                        "Hello world! Give me pen and paper and let's go!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "                            \n             (8)            \n            (888)           \n           8(^o^)8          \n             / \\            \n             | |            "
+            ]
+        ],
+        "#04": [
+            [
+                "TEXTBOX",
+                "I grew up on a farm. There was always a lot of work to do. I would dirty my hands in the soil and had my head in the clouds and I was just always out of place."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Lou",
+                        "Rabbit robot astronauts..."
+                    ],
+                    [
+                        "Lou",
+                        "Carrot rockets..."
+                    ],
+                    [
+                        "Lou",
+                        "Oh, look a bird!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "             (8)            \n            (888)     ee    \n           8(o_o)8          \n             / \\            \n             | |            \n~~     ~~~~~~~~~~~~~cc~~~cc~\n {     }                   }",
+                {
+                    "ee": "🐦",
+                    "cc": "🥕"
+                }
+            ]
+        ],
+        "#05": [
+            [
+                "TEXTBOX",
+                "School wasn't much fun either. The halls haunt me in my nightmares."
+            ],
+            [
+                "THOUGHT",
+                [
+                    [
+                        "Lou",
+                        "If I walk as if I was walking somewhere and look nobody in the eye, I may get through recess..."
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "       |   ____      ____   \n       |  |    |    |    |  \n       |  |    |    |    |  \n       |  |    |    |    |  \n    /| |__|____|____|____|  \n   / | /                    \n  /  |/                     \n  |  /                      \n  | /                       \n  |/                        \n  /                         \n /                          \n/                           "
+            ]
+        ],
+        "#06": [
+            [
+                "TEXTBOX",
+                "I first sketched Stu on the corner of a page when I was 15."
+            ],
+            [
+                "ASCII",
+                "              Friday, again \n                            \n Dear diary,                \n                            \n Life sucks as usual.       \n I hate everybody.          \n                            \n    Love and kisses,        \n        Lou                 \n                            \n                            \n                            \n                            \n                      /\\ /\\ \n                      \\/_\\/ \n                      (o.O) \n                      / \" \\ \n                 Boo! ()~() "
+            ]
+        ],
+        "#07": [
+            [
+                "TEXTBOX",
+                "I graduated and moved to the city, just to find that there was nothing and no one waiting for me."
+            ],
+            [
+                "ASCII",
+                "  o     o         o  o      \n /|\\ o /|\\ o   o /|\\/|\\     \n / \\/|\\/ \\/|\\ /|\\/ \\/ \\   o \n o  / \\ o / \\ / \\  o   o /|\\\n/|\\    /|\\        /|\\ /|\\/ \\\n/ \\    / \\        / \\ / \\   "
+            ]
+        ],
+        "#08": [
+            [
+                "TEXTBOX",
+                "I worked at the mall. I would write and draw my comics in the evenings while doing my laundry at a self-service."
+            ],
+            [
+                "ASCII",
+                "    ____________________    \n    |  _____     ____  |    \n    | |_____|   |____| |    \n    | |_____|          |    \n    |                  |    \n    |                  |    \n    |      ______      |    \n    |     / ____ \\     |    \n    |    / /    \\ \\    |    \n    |    | |    | |    |    \n    |    \\ \\____/ /    |    \n    |     \\______/     |    \n    |__________________|    "
+            ]
+        ],
+        "#09": [
+            [
+                "TEXTBOX",
+                "It has been a long and windy road. But eventually my book got published. All of a sudden, the entire world was crazy for Stu."
+            ],
+            [
+                "ASCII",
+                "   ______________________   \n  |                      |  \n  |   o                  |  \n  |   | here             |  \n  |   >>>>>>>v           |  \n  |          v>>>>>>>>v  |  \n  |                   v  |  \n  |                   v  |  \n  |      v<<<<<<<<<<<<v  |  \n  |      v               |  \n  |      v               |  \n  |      v               |  \n  |      v               |  \n  |      v               |  \n  |      v>>>>>>>>v      |  \n  |               v>v    |  \n  |                 v    |  \n  |          v<<<<<<v    |  \n  | v<<<<<<<<v           |  \n  | v                    |  \n  | v                    |  \n  | v o              N   |  \n  | v>| there       W E  |  \n  |                  S   |  \n  |______________________|  "
+            ]
+        ],
+        "#10": [
+            [
+                "TEXTBOX",
+                "My dreams became real -- but it was unlike everything I could have ever imagined. Killer rabbit Stu showed up at my autograph session."
+            ],
+            [
+                "SPEECH",
+                [
+                    [
+                        "Lou",
+                        "Stu?"
+                    ],
+                    [
+                        "Stu",
+                        "Boo!"
+                    ]
+                ]
+            ],
+            [
+                "ASCII",
+                "   (8)             /\\ /\\    \n  (888)            \\/_\\/    \n 8(o_o)8        xx (o.O) zz \n bb/ \\pp          \\/ \" \\/   \n   | |             ()~()    ",
+                {
+                    "xx": "🪚",
+                    "zz": "🫀",
+                    "bb": "📕",
+                    "pp": "🖊️"
+                }
+            ]
+        ]
+    }
+}
