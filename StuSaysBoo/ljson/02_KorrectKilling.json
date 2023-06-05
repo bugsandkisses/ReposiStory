@@ -13,9 +13,9 @@
             ],
             [
                 "ASCII",
-                "               /\\ /\\        \n               \\/_\\/        \n               (o.O)        \n               / \" \\zzz     \n               ()~()        ",
+                "               /\\ /\\        \n               \\/_\\/        \n               (o.O)        \n               / \" \\zz      \n               ()~()        ",
                 {
-                    "zzz": "🖍️"
+                    "zz": "🖊️"
                 }
             ],
             [
@@ -51,7 +51,7 @@
         "#02": [
             [
                 "TEXTBOX",
-                "It is like entering a different world of dusty sponges."
+                "It is like entering a different world. A world of dusty sponges."
             ],
             [
                 "ASCII",
@@ -180,7 +180,7 @@
                 [
                     [
                         "Stu",
-                        "Am Stu! Friends?"
+                        "Boo?"
                     ],
                     [
                         "Student",
@@ -222,9 +222,9 @@
         "#13": [
             [
                 "ASCII",
-                "   ______________________   \n  |  __________________  |  \n  |  |                |  |  \n  |  |                |  |  \n  |  |    (8)         |  |  \n  |  |   (888)        |  |  \n  |  |  8(^.^)8       |  |  \n  |  |  bb/ \\pp       |  |  \n  |  |    | |         |  |  \n  |  |_____________<3_|  |  \n  |                      |  \n  |  > Hey, there! It's  |  \n  |    bunny time!       |  \n  |    The new Stu book  |  \n  |    is available      |  \n  |    starting from     |  \n  |    Friday, 13th!     |  \n  |    Meet me at the    |  \n  |    mall for books    |  \n  |    and autographs!   |  \n  |                      |  \n  | #killerbunny #lou    |  \n  | #mall #meetandgreet  |  \n  | #rabbit #stusaysboo  |  \n  |______________________|  ",
+                "   ______________________   \n  |   ________________   |  \n  |  |                |  |  \n  |  |                |  |  \n  |  |    (8)         |  |  \n  |  |   (888)        |  |  \n  |  |  8(^.^)8       |  |  \n  |  |  bb/ \\pp       |  |  \n  |  |    | |         |  |  \n  |  |_____________<3_|  |  \n  |                      |  \n  |  > Hey, there!       |  \n  |    It's bunny time!  |  \n  |    The new Stu book  |  \n  |    is available      |  \n  |    starting from     |  \n  |    Friday, 13th!     |  \n  |    Meet me at the    |  \n  |    mall for books    |  \n  |    and autographs!   |  \n  |                      |  \n  | #killerbunny #lou    |  \n  | #mall #meetandgreet  |  \n  | #rabbit #stusaysboo  |  \n  |______________________|  ",
                 {
-                    "gg": "📕",
+                    "bb": "📕",
                     "pp": "🖊️"
                 }
             ]
@@ -235,7 +235,7 @@
                 [
                     [
                         "Student",
-                        "I'm not getting anywhere because these stupid teachers want me write a stupid 3-pages essay because I tried to flush those stupid middle school girls down the closet."
+                        "I'm not getting anywhere because these stupid teachers want me write a stupid 3-page essay because I tried to flush those stupid middle school girls down the closet."
                     ],
                     [
                         "Stu",
@@ -283,7 +283,7 @@
                 [
                     [
                         "Student",
-                        "And you better back off if you don't want me to the same with you, stupid!"
+                        "And you better back off if you don't want me to do the same with you, stupid!"
                     ],
                     [
                         "Stu",
@@ -378,10 +378,10 @@
             ],
             [
                 "ASCII",
-                "         /\\ /\\     ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (o.O)  __zz/ | |   \n      ppp/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (o.O)  __zz/ | |   \n       pp/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
                 {
                     "zz": "📱",
-                    "ppp": "🖍️"
+                    "pp": "🖊️"
                 }
             ]
         ],
@@ -415,10 +415,10 @@
             ],
             [
                 "ASCII",
-                "         /\\ /\\     ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (o.O)  __zz/ | |   \n      ppp/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (o.O)  __zz/ | |   \n       pp/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
                 {
                     "zz": "📱",
-                    "ppp": "🖍️"
+                    "pp": "🖊️"
                 }
             ]
         ],
@@ -429,10 +429,10 @@
             ],
             [
                 "ASCII",
-                "       zz  --               \n               \\            \n                            \n         /\\ /\\   \\ ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (o.O)  ____/ | |   \n      ppp/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
+                "       zz  --               \n               \\            \n                            \n         /\\ /\\   \\ ()~()    \n         \\/_\\/     (Ò.Ò)    \n         (o.O)  ____/ | |   \n       pp/ \" \\zz|   /_|_|   \n         ()~()  |  /|  |    ",
                 {
                     "zz": "📱",
-                    "ppp": "🖍️"
+                    "pp": "🖊️"
                 }
             ]
         ],
@@ -443,9 +443,9 @@
             ],
             [
                 "ASCII",
-                "                            \n                            \n             --  ppp        \n         --                 \n     --                     \n                            \n                            ",
+                "                            \n                            \n             --   pp        \n         --                 \n     --                     \n                            \n                            ",
                 {
-                    "ppp": "🖍️"
+                    "pp": "🖊️"
                 }
             ]
         ],
@@ -461,10 +461,10 @@
             ],
             [
                 "ASCII",
-                "         /\\ /\\     ()~()    \n         \\/_\\/     (x.x)    \n         (o.O)  ___ppp| |   \n         / \" \\zz|   /_|_|   \n zz      ()~()  |  /|  |    ",
+                "         /\\ /\\     ()~()    \n         \\/_\\/     (x.x)    \n         (o.O)  ___pp | |   \n         / \" \\zz|   /_|_|   \n zz      ()~()  |  /|  |    ",
                 {
                     "zz": "📱",
-                    "ppp": "🖍️"
+                    "pp": "🖊️"
                 }
             ]
         ],
@@ -475,10 +475,10 @@
             ],
             [
                 "ASCII",
-                "   /\\ /\\           ()~()    \n   \\/_\\/           (x.x)    \n   (o.O)        ___ppp| |   \n zz/ \" \\zz      |   /_|_|   \n   ()~()        |  /|  |    ",
+                "   /\\ /\\           ()~()    \n   \\/_\\/           (x.x)    \n   (o.O)        ___pp | |   \n zz/ \" \\zz      |   /_|_|   \n   ()~()        |  /|  |    ",
                 {
                     "zz": "📱",
-                    "ppp": "🖍️"
+                    "pp": "🖊️"
                 }
             ]
         ]

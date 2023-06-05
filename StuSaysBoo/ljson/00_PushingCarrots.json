@@ -1,6 +1,6 @@
 {
     "META": {
-        "TITLE": "Pushing carrots",
+        "TITLE": "Pushing Carrots",
         "AUTHOR": "Lou J. Son",
         "VERSION": "2023-05-13",
         "SUMMARY": "Stu, the rabbit is pushing up the carrots but eventually he realizes a solid ground to leave."
@@ -9,7 +9,7 @@
         "#cover": [
             [
                 "TEXTBOX",
-                "Pushing carrots"
+                "Pushing Carrots"
             ],
             [
                 "ASCII",
@@ -110,7 +110,7 @@
                 [
                     [
                         "farmer",
-                        "WTF?!"
+                        "What the...?!"
                     ]
                 ]
             ],
@@ -129,7 +129,7 @@
             ],
             [
                 "ASCII",
-                "                    ___     \n                  _/___\\_   \n                   (x-x)    \n                    / \\     \n                  cc| |     ",
+                "                    ___     \n                  _/___\\_   \n                   (O-O)    \n                    / \\     \n                  cc| |     ",
                 {
                     "cc": "🥕"
                 }
@@ -138,7 +138,7 @@
         "#07": [
             [
                 "TEXTBOX",
-                "The flying carrot leads to an immediate death."
+                "...leads to an immediate death."
             ],
             [
                 "ASCII",
