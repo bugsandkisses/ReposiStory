@@ -33,3 +33,8 @@ In _Stu's life hacks_ Stu shares precious life hacks.
 
 - The comic only renders well for monospaced font.
 - Emojis are not monospaced.
+
+
+## Acknowledgements
+
+Thanks to B.F., R.W. and N. for reviewing!
