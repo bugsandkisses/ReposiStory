@@ -8,7 +8,6 @@
       Stu says b(o.O)!       
                 / " \        
                 ()~()        
-                             
 ```
 
 ### [Stu says boo!](main_s00_StuSaysBoo.html)
