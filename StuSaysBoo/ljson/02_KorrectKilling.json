@@ -133,7 +133,7 @@
             ],
             [
                 "ASCII",
-                "          ________________  \n         |                | \n         |                | \n         |       /\\       | \n         |   ___/__\\___   | \n ______  |  |          |  | \n| Room | |  | DETENT-  |  | \n|  406 | |  | TION     |  | \n|______| |  |__________|  | \n         |                | \n         |                | \n         |                | \n         |                | \n_________|________________|_"
+                "          ________________  \n         |                | \n         |                | \n         |       /\\       | \n         |   ___/__\\___   | \n ______  |  |          |  | \n| Room | |  | DETEN-   |  | \n|  406 | |  | TION     |  | \n|______| |  |__________|  | \n         |                | \n         |                | \n         |                | \n         |                | \n_________|________________|_"
             ]
         ],
         "#09": [
@@ -184,7 +184,7 @@
                     ],
                     [
                         "Student",
-                        "Are you stupid? What the heck are you anyways?"
+                        "Are you stupid? What the heck are you anyway?"
                     ],
                     [
                         "Stu",
@@ -235,7 +235,7 @@
                 [
                     [
                         "Student",
-                        "I'm not getting anywhere because these stupid teachers want me write a stupid 3-page essay because I tried to flush those stupid middle school girls down the closet."
+                        "I'm not getting anywhere because these stupid teachers want me to write a stupid 3-page essay because I tried to flush those stupid middle school girls down the closet."
                     ],
                     [
                         "Stu",
